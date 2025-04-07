@@ -267,7 +267,7 @@ namespace SlimUI.ModernMenu{
 			operation.allowSceneActivation = false;
 			mainCanvas.SetActive(false);
 			loadingMenu.SetActive(true);
-
+			
 			while (!operation.isDone){
 				float progress = Mathf.Clamp01(operation.progress / .95f);
 				loadingBar.value = progress;

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff5e8c95af3592c4aa04a18091f8c21c, type: 3}
+  m_Name: config
+  m_EditorClassIdentifier: 
+  Container:
+    prefab: {fileID: 7932988272645550730, guid: 0c2b21f4495e4fe47b8fa04f0ed991dc,
+      type: 3}
+  Sprite:
+    prefab: {fileID: 7932988272645550730, guid: d1b6e9c8a93a67a45adb910b871d8da6,
+      type: 3}
+  Text:
+    prefab: {fileID: 7932988272645550730, guid: 77abe77d14666954fbc2908c2f8cc2f0,
+      type: 3}
+  Graphics:
+    prefab: {fileID: 7932988272645550730, guid: d9c9781031ef69544bc5d458eba99c19,
+      type: 3}
+  Spine:
+    prefab: {fileID: 7932988272645550730, guid: 7d615cb17127181419659ecde9604460,
+      type: 3}
