@@ -1,13 +1,17 @@
 using Sirenix.OdinInspector;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using WebSocketSharp;
 using WebSocketSharp.Server;
+using Random = UnityEngine.Random;
+
 
 namespace PIXIJS
 {
+    [ExecuteInEditMode]
     public class Manager : MonoBehaviour
     {
         public class Echo : WebSocketBehavior
@@ -23,15 +27,21 @@ namespace PIXIJS
                 Send(e.Data);
             }
         }
+
+        
+        
         
         private WebSocketServer wsServer;
         [TitleGroup("WebSocket", "服务器")]
         public int port = 8080;
         public string projectPath = string.Empty;
+        [InfoBox("websocket is running", InfoMessageType.Warning, "running")]
+        
         [TitleGroup("FakeSync", "伪同步相关")]
-        public Image screenShot;
-        public GameObject container;
-        public float runTime = 0;
+        // public Image screenShot;
+        // public GameObject container;
+        [ReadOnly]
+        public bool running = false;
 
         
         [ButtonGroup]
@@ -48,35 +58,21 @@ namespace PIXIJS
 
         void StartWebSocket()
         {
-
-            if(wsServer != null)
+            if(wsServer == null)
             {
-                wsServer.Stop();
-                wsServer = null;
+                StartCoroutine(CheckRunning());
+                wsServer = new WebSocketServer(port);
+                wsServer.AddWebSocketService<Echo>("/");
+            }
+            if(wsServer.IsListening)
+            {
+                wsServer.Stop();    
             }
             else
             {
-                wsServer = new WebSocketServer(port);
-                wsServer.AddWebSocketService<Echo>("/");
                 wsServer.Start();
-                StartCoroutine(GC());
             }
-        }
-
-        
-        IEnumerator GC()
-        {
-            runTime = 0f;
-            while (true)
-            {
-                if (!wsServer.IsListening)
-                {
-                    Debug.Log("stop");
-                    yield break;
-                }
-                runTime += Time.deltaTime;
-                yield return new WaitForSeconds(0.1f);
-            }
+            running = wsServer.IsListening;
         }
 
         // Start is called before the first frame update
@@ -85,10 +81,28 @@ namespace PIXIJS
             
         }
 
+        IEnumerator CheckRunning()
+        {
+            
+            while(true)
+            {
+                running = wsServer != null && wsServer.IsListening;
+                yield return new WaitForSecondsRealtime(0.5f);
+            }
+            
+        }
+
+        void OnDestroy()
+        {
+            wsServer.Stop();
+            wsServer = null;
+            Debug.Log("destroy");
+        }
+
         // Update is called once per frame
         void Update()
         {
-
+            // 
         }
     }
 }
