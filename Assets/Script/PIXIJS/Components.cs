@@ -10,11 +10,18 @@ namespace PIXIJS
     {
         //Context:Options:Define
         [Serializable]
-        public class SliderProperties
+        public class LayoutScope
         {
-            public GameObject bar;
-            public GameObject slider;
-            public GameObject bg;
+            
+            public enum dirs{ Horizontal, Vertical }
+            [Serializable]
+            public class Options
+            {
+                [EnumPaging]
+                public dirs _dir;
+                
+            }
+            
         }
         //Context:Options:Define
 
@@ -29,7 +36,7 @@ namespace PIXIJS
 
             //Context:Options
             [ShowIf("target", ComponentStatic.Slider)]
-            public SliderProperties sliderProperties;
+            public LayoutScope.Options sliderProperties;
             //Context:Options
         }
 

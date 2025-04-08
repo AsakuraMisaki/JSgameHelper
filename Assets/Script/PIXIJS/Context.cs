@@ -8,6 +8,7 @@ namespace PIXIJS
 {
     public class Context : MonoBehaviour
     {
+        
 
         [Button]
         private void Sync()
