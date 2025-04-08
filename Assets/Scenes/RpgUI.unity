@@ -715,7 +715,7 @@ PrefabInstance:
     - target: {fileID: 5519954038242003174, guid: 0c2b21f4495e4fe47b8fa04f0ed991dc,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 49.99997
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5519954038242003174, guid: 0c2b21f4495e4fe47b8fa04f0ed991dc,
         type: 3}
@@ -762,6 +762,11 @@ PrefabInstance:
       propertyPath: components.Array.data[0].sliderProperties.bar
       value: 
       objectReference: {fileID: 1546730160}
+    - target: {fileID: 6381028432693821188, guid: 0c2b21f4495e4fe47b8fa04f0ed991dc,
+        type: 3}
+      propertyPath: components.Array.data[0].sliderProperties._dir
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6381028432693821188, guid: 0c2b21f4495e4fe47b8fa04f0ed991dc,
         type: 3}
       propertyPath: components.Array.data[0].sliderProperties.slider
