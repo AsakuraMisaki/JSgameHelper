@@ -14,6 +14,7 @@ export class GameObject{
     const prefab = this.prefabs.get(target.sourceId);
     return prefab;
   } 
+  
   sourceId:number = 0;
   name:string = "";
   tag:string = "";

@@ -3,6 +3,18 @@ import { EV } from "./EV";
 import { Model } from "./Model";
 import { PIXI } from "./Types";
 
+export interface temp{
+  tt: number
+}
+
+export class A implements temp{
+  tt: number = 0;
+}
+
+export class B implements A{
+  tt: number = 0;
+}
+
 export class Vec2{
   _x: number = 0;
   _y: number = 0;
