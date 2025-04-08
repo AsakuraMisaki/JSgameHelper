@@ -759,14 +759,24 @@ PrefabInstance:
       objectReference: {fileID: 1546730160}
     - target: {fileID: 6381028432693821188, guid: 0c2b21f4495e4fe47b8fa04f0ed991dc,
         type: 3}
+      propertyPath: components.Array.data[0].sliderProperties.re
+      value: 
+      objectReference: {fileID: 1803186139}
+    - target: {fileID: 6381028432693821188, guid: 0c2b21f4495e4fe47b8fa04f0ed991dc,
+        type: 3}
       propertyPath: components.Array.data[0].sliderProperties.bar
       value: 
       objectReference: {fileID: 1546730160}
     - target: {fileID: 6381028432693821188, guid: 0c2b21f4495e4fe47b8fa04f0ed991dc,
         type: 3}
       propertyPath: components.Array.data[0].sliderProperties._dir
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6381028432693821188, guid: 0c2b21f4495e4fe47b8fa04f0ed991dc,
+        type: 3}
+      propertyPath: components.Array.data[0].sliderProperties.reff
+      value: 
+      objectReference: {fileID: 1803186139}
     - target: {fileID: 6381028432693821188, guid: 0c2b21f4495e4fe47b8fa04f0ed991dc,
         type: 3}
       propertyPath: components.Array.data[0].sliderProperties.slider
@@ -789,6 +799,12 @@ PrefabInstance:
 --- !u!224 &1803186138 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5519954038242003174, guid: 0c2b21f4495e4fe47b8fa04f0ed991dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1803186137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1803186139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7932988272645550730, guid: 0c2b21f4495e4fe47b8fa04f0ed991dc,
     type: 3}
   m_PrefabInstance: {fileID: 1803186137}
   m_PrefabAsset: {fileID: 0}
