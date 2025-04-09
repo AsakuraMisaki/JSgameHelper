@@ -90,28 +90,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   list:
-  - beh: 1
+  - beh: 0
     assignScope:
       getter:
-        type: 2
-        target: {fileID: 0}
-        fff: $game
-        built: 0
-        args:
-        - 12
-        num: 0
-        str: 
-      setter:
-        type: 0
+        type: 1
         target: {fileID: 3108522559075443009}
         fff: 
         built: 0
         args: []
         num: 0
         str: 
-  - beh: 0
-    assignScope:
-      getter:
+      setter:
         type: 0
         target: {fileID: 0}
         fff: 
@@ -119,7 +108,43 @@ MonoBehaviour:
         args: []
         num: 0
         str: 
-      setter:
+    operationScope:
+      left:
+        type: 0
+        target: {fileID: 0}
+        fff: 
+        built: 0
+        args: []
+        num: 0
+        str: 
+      tryTo: 
+      right:
+        type: 0
+        target: {fileID: 0}
+        fff: 
+        built: 0
+        args: []
+        num: 0
+        str: 
+    callScope:
+      theThis:
+        type: 0
+        target: {fileID: 0}
+        fff: 
+        built: 0
+        args: []
+        num: 0
+        str: 
+      target:
+        type: 0
+        target: {fileID: 0}
+        fff: 
+        built: 0
+        args: []
+        num: 0
+        str: 
+    returnScope:
+      target:
         type: 0
         target: {fileID: 0}
         fff: 
