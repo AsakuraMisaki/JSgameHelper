@@ -1,22 +1,26 @@
 import { PIXIfeatureComponent } from "./Component";
 import { EV } from "./EV";
 import { Model } from "./Model";
+import { Transform } from "./Transform";
 import { PIXI } from "./Types";
 
-export interface temp{
-  tt: number
+export namespace temp{
+  export class T{
+    
+  }
 }
 
-export class A implements temp{
-  tt: number = 0;
+export interface A{
+  tt: number;
 }
 
 export class B implements A{
   tt: number = 0;
 }
 
+/** @public */
 export class Vec2{
-  _x: number = 0;
+   _x: number = 0;
   _y: number = 0;
   constructor(x=0, y=0){
     this._x = x;
@@ -35,14 +39,13 @@ export class Layout extends PIXIfeatureComponent {
   static maskArea:PIXI.Container;
   static _init = false;
   ev = new EV();
-  
-  _dir = dirs.Vertical;
-  _needLayout = false;
+  /** @public */ _dir = dirs.Vertical;
+  /** @public */ _needLayout = false;
+  /** @public */ maxCols = Infinity;
   margin = new Vec2();
   _padding = new Vec2(5, 5);
   _size = new Vec2(Infinity, Infinity);
   round = 0;
-  maxCols = Infinity;
   mask:PIXI.Graphics;
   get size(){
     return this._size;

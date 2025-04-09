@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using AA;
 
 namespace PIXIJS
 {
@@ -17,7 +19,10 @@ namespace PIXIJS
             [Serializable]
             public class Options
             {
-                [EnumPaging]
+                CC a;
+                public Dictionary<string, Context> temp;
+                public Regex rrr;
+                
                 public dirs _dir;
                 public GameObject re;
             }
@@ -26,7 +31,9 @@ namespace PIXIJS
         //Context:Options:Define
 
         //Context:Enum
-        public enum ComponentStatic { Container, Slider, Button, SideFlag }
+        public enum ComponentStatic { 
+            Container, Slider, Button, SideFlag, 
+        }
         //Context:Enum
         [Serializable]
         public class Component

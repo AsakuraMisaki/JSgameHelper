@@ -11,7 +11,7 @@ using Random = UnityEngine.Random;
 
 namespace PIXIJS
 {
-    [ExecuteInEditMode]
+    
     public class Manager : MonoBehaviour
     {
         public class Echo : WebSocketBehavior

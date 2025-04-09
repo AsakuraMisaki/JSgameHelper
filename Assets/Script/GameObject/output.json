@@ -1,7 +1,7 @@
 {
 	"schemaVersion": "2.0",
 	"id": 0,
-	"name": "rmmz-game",
+	"name": "Documentation",
 	"variant": "project",
 	"kind": 1,
 	"flags": {},
@@ -14,14 +14,84 @@
 			"flags": {},
 			"children": [
 				{
-					"id": 17,
+					"id": 2,
+					"name": "temp",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 3,
+							"name": "T",
+							"variant": "declaration",
+							"kind": 128,
+							"flags": {},
+							"children": [
+								{
+									"id": 4,
+									"name": "constructor",
+									"variant": "declaration",
+									"kind": 512,
+									"flags": {},
+									"signatures": [
+										{
+											"id": 5,
+											"name": "T",
+											"variant": "signature",
+											"kind": 16384,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": 3,
+												"name": "T",
+												"qualifiedName": "temp.T"
+											}
+										}
+									]
+								}
+							],
+							"groups": [
+								{
+									"title": "Constructors",
+									"children": [
+										4
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "Layout.ts",
+									"line": 8,
+									"character": 15
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Classes",
+							"children": [
+								3
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "Layout.ts",
+							"line": 7,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 27,
 					"name": "dirs",
 					"variant": "declaration",
 					"kind": 8,
 					"flags": {},
 					"children": [
 						{
-							"id": 18,
+							"id": 28,
 							"name": "Horizontal",
 							"variant": "declaration",
 							"kind": 16,
@@ -29,7 +99,7 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 19,
+									"line": 35,
 									"character": 19
 								}
 							],
@@ -39,7 +109,7 @@
 							}
 						},
 						{
-							"id": 19,
+							"id": 29,
 							"name": "Vertical",
 							"variant": "declaration",
 							"kind": 16,
@@ -47,7 +117,7 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 19,
+									"line": 35,
 									"character": 31
 								}
 							],
@@ -61,28 +131,110 @@
 						{
 							"title": "Enumeration Members",
 							"children": [
-								18,
-								19
+								28,
+								29
 							]
 						}
 					],
 					"sources": [
 						{
 							"fileName": "Layout.ts",
-							"line": 19,
+							"line": 35,
 							"character": 12
 						}
 					]
 				},
 				{
-					"id": 20,
+					"id": 8,
+					"name": "B",
+					"variant": "declaration",
+					"kind": 128,
+					"flags": {},
+					"children": [
+						{
+							"id": 9,
+							"name": "constructor",
+							"variant": "declaration",
+							"kind": 512,
+							"flags": {},
+							"signatures": [
+								{
+									"id": 10,
+									"name": "B",
+									"variant": "signature",
+									"kind": 16384,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 8,
+										"name": "B"
+									}
+								}
+							]
+						},
+						{
+							"id": 11,
+							"name": "tt",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Layout.ts",
+									"line": 18,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "0",
+							"implementationOf": {
+								"type": "reference",
+								"target": 7,
+								"name": "A.tt"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								9
+							]
+						},
+						{
+							"title": "Properties",
+							"children": [
+								11
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "Layout.ts",
+							"line": 17,
+							"character": 13
+						}
+					],
+					"implementedTypes": [
+						{
+							"type": "reference",
+							"target": 6,
+							"name": "A"
+						}
+					]
+				},
+				{
+					"id": 30,
 					"name": "Layout",
 					"variant": "declaration",
 					"kind": 128,
 					"flags": {},
 					"children": [
 						{
-							"id": 23,
+							"id": 33,
 							"name": "constructor",
 							"variant": "declaration",
 							"kind": 512,
@@ -90,13 +242,13 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 55,
+									"line": 70,
 									"character": 2
 								}
 							],
 							"signatures": [
 								{
-									"id": 24,
+									"id": 34,
 									"name": "Layout",
 									"variant": "signature",
 									"kind": 16384,
@@ -104,31 +256,30 @@
 									"sources": [
 										{
 											"fileName": "Layout.ts",
-											"line": 55,
+											"line": 70,
 											"character": 2
 										}
 									],
 									"type": {
 										"type": "reference",
-										"target": 20,
-										"name": "Layout",
-										"package": "rmmz-game"
+										"target": 30,
+										"name": "Layout"
 									},
 									"overwrites": {
 										"type": "reference",
-										"target": -1,
+										"target": 234,
 										"name": "PIXIfeatureComponent.constructor"
 									}
 								}
 							],
 							"overwrites": {
 								"type": "reference",
-								"target": -1,
+								"target": 233,
 								"name": "PIXIfeatureComponent.constructor"
 							}
 						},
 						{
-							"id": 42,
+							"id": 52,
 							"name": "_childpos",
 							"variant": "declaration",
 							"kind": 1024,
@@ -136,14 +287,14 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 53,
+									"line": 68,
 									"character": 2
 								}
 							],
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 43,
+									"id": 53,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -151,13 +302,13 @@
 									"sources": [
 										{
 											"fileName": "Layout.ts",
-											"line": 123,
+											"line": 138,
 											"character": 2
 										}
 									],
 									"signatures": [
 										{
-											"id": 44,
+											"id": 54,
 											"name": "__type",
 											"variant": "signature",
 											"kind": 4096,
@@ -165,7 +316,7 @@
 											"sources": [
 												{
 													"fileName": "Layout.ts",
-													"line": 123,
+													"line": 138,
 													"character": 2
 												}
 											],
@@ -180,7 +331,7 @@
 							"defaultValue": "..."
 						},
 						{
-							"id": 45,
+							"id": 55,
 							"name": "_childsize",
 							"variant": "declaration",
 							"kind": 1024,
@@ -188,14 +339,14 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 54,
+									"line": 69,
 									"character": 2
 								}
 							],
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 46,
+									"id": 56,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -203,13 +354,13 @@
 									"sources": [
 										{
 											"fileName": "Layout.ts",
-											"line": 120,
+											"line": 135,
 											"character": 2
 										}
 									],
 									"signatures": [
 										{
-											"id": 47,
+											"id": 57,
 											"name": "__type",
 											"variant": "signature",
 											"kind": 4096,
@@ -217,13 +368,13 @@
 											"sources": [
 												{
 													"fileName": "Layout.ts",
-													"line": 120,
+													"line": 135,
 													"character": 2
 												}
 											],
 											"parameters": [
 												{
-													"id": 48,
+													"id": 58,
 													"name": "c",
 													"variant": "param",
 													"kind": 32768,
@@ -237,14 +388,14 @@
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 49,
+													"id": 59,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
 													"flags": {},
 													"children": [
 														{
-															"id": 51,
+															"id": 61,
 															"name": "height",
 															"variant": "declaration",
 															"kind": 1024,
@@ -252,7 +403,7 @@
 															"sources": [
 																{
 																	"fileName": "Layout.ts",
-																	"line": 121,
+																	"line": 136,
 																	"character": 27
 																}
 															],
@@ -263,7 +414,7 @@
 															"defaultValue": "c.height"
 														},
 														{
-															"id": 50,
+															"id": 60,
 															"name": "width",
 															"variant": "declaration",
 															"kind": 1024,
@@ -271,7 +422,7 @@
 															"sources": [
 																{
 																	"fileName": "Layout.ts",
-																	"line": 121,
+																	"line": 136,
 																	"character": 12
 																}
 															],
@@ -286,15 +437,15 @@
 														{
 															"title": "Properties",
 															"children": [
-																51,
-																50
+																61,
+																60
 															]
 														}
 													],
 													"sources": [
 														{
 															"fileName": "Layout.ts",
-															"line": 121,
+															"line": 136,
 															"character": 11
 														}
 													]
@@ -307,153 +458,30 @@
 							"defaultValue": "..."
 						},
 						{
-							"id": 26,
+							"id": 36,
 							"name": "_dir",
 							"variant": "declaration",
 							"kind": 1024,
-							"flags": {},
+							"flags": {
+								"isPublic": true
+							},
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 27,
-									"character": 2
+									"line": 42,
+									"character": 17
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": 17,
-								"name": "dirs",
-								"package": "rmmz-game"
+								"target": 27,
+								"name": "dirs"
 							},
 							"defaultValue": "dirs.Vertical"
 						},
 						{
-							"id": 86,
+							"id": 96,
 							"name": "_enable",
-							"variant": "declaration",
-							"kind": 1024,
-							"flags": {
-								"isInherited": true
-							},
-							"sources": [
-								{
-									"fileName": "Component.ts",
-									"line": 6,
-									"character": 2
-								}
-							],
-							"type": {
-								"type": "reference",
-								"target": {
-									"packageName": "typescript",
-									"packagePath": "lib/lib.es5.d.ts",
-									"qualifiedName": "Boolean"
-								},
-								"name": "Boolean",
-								"package": "typescript"
-							},
-							"defaultValue": "true",
-							"inheritedFrom": {
-								"type": "reference",
-								"target": -1,
-								"name": "PIXIfeatureComponent._enable"
-							}
-						},
-						{
-							"id": 85,
-							"name": "_gameObject",
-							"variant": "declaration",
-							"kind": 1024,
-							"flags": {
-								"isInherited": true
-							},
-							"sources": [
-								{
-									"fileName": "Component.ts",
-									"line": 5,
-									"character": 2
-								}
-							],
-							"type": {
-								"type": "reference",
-								"target": {
-									"packageName": "rmmz-game",
-									"packagePath": "js/GameObject/GameObject.ts",
-									"qualifiedName": "GameObject"
-								},
-								"name": "GameObject",
-								"package": "rmmz-game"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"target": -1,
-								"name": "PIXIfeatureComponent._gameObject"
-							}
-						},
-						{
-							"id": 27,
-							"name": "_needLayout",
-							"variant": "declaration",
-							"kind": 1024,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "Layout.ts",
-									"line": 28,
-									"character": 2
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "boolean"
-							},
-							"defaultValue": "false"
-						},
-						{
-							"id": 29,
-							"name": "_padding",
-							"variant": "declaration",
-							"kind": 1024,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "Layout.ts",
-									"line": 30,
-									"character": 2
-								}
-							],
-							"type": {
-								"type": "reference",
-								"target": 2,
-								"name": "Vec2",
-								"package": "rmmz-game"
-							},
-							"defaultValue": "..."
-						},
-						{
-							"id": 30,
-							"name": "_size",
-							"variant": "declaration",
-							"kind": 1024,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "Layout.ts",
-									"line": 31,
-									"character": 2
-								}
-							],
-							"type": {
-								"type": "reference",
-								"target": 2,
-								"name": "Vec2",
-								"package": "rmmz-game"
-							},
-							"defaultValue": "..."
-						},
-						{
-							"id": 87,
-							"name": "_start",
 							"variant": "declaration",
 							"kind": 1024,
 							"flags": {
@@ -476,15 +504,138 @@
 								"name": "Boolean",
 								"package": "typescript"
 							},
+							"defaultValue": "true",
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 237,
+								"name": "PIXIfeatureComponent._enable"
+							}
+						},
+						{
+							"id": 95,
+							"name": "_gameObject",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "Component.ts",
+									"line": 6,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"packageName": "<unknown>",
+									"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/GameObject.ts",
+									"qualifiedName": "GameObject"
+								},
+								"name": "GameObject"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 236,
+								"name": "PIXIfeatureComponent._gameObject"
+							}
+						},
+						{
+							"id": 37,
+							"name": "_needLayout",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "Layout.ts",
+									"line": 43,
+									"character": 17
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							},
+							"defaultValue": "false"
+						},
+						{
+							"id": 40,
+							"name": "_padding",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Layout.ts",
+									"line": 46,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 12,
+								"name": "Vec2"
+							},
+							"defaultValue": "..."
+						},
+						{
+							"id": 41,
+							"name": "_size",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Layout.ts",
+									"line": 47,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 12,
+								"name": "Vec2"
+							},
+							"defaultValue": "..."
+						},
+						{
+							"id": 97,
+							"name": "_start",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "Component.ts",
+									"line": 8,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"packageName": "typescript",
+									"packagePath": "lib/lib.es5.d.ts",
+									"qualifiedName": "Boolean"
+								},
+								"name": "Boolean",
+								"package": "typescript"
+							},
 							"defaultValue": "false",
 							"inheritedFrom": {
 								"type": "reference",
-								"target": -1,
+								"target": 238,
 								"name": "PIXIfeatureComponent._start"
 							}
 						},
 						{
-							"id": 84,
+							"id": 94,
 							"name": "container",
 							"variant": "declaration",
 							"kind": 1024,
@@ -494,29 +645,28 @@
 							"sources": [
 								{
 									"fileName": "Component.ts",
-									"line": 41,
+									"line": 42,
 									"character": 2
 								}
 							],
 							"type": {
 								"type": "reference",
 								"target": {
-									"packageName": "rmmz-game",
-									"packagePath": "js/GameObject/Types.ts",
+									"packageName": "<unknown>",
+									"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Types.ts",
 									"qualifiedName": "PIXI.Container"
 								},
 								"name": "Container",
-								"package": "rmmz-game",
 								"qualifiedName": "PIXI.Container"
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": -1,
+								"target": 235,
 								"name": "PIXIfeatureComponent.container"
 							}
 						},
 						{
-							"id": 25,
+							"id": 35,
 							"name": "ev",
 							"variant": "declaration",
 							"kind": 1024,
@@ -524,20 +674,19 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 25,
+									"line": 41,
 									"character": 2
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": 128,
-								"name": "EV",
-								"package": "rmmz-game"
+								"target": 138,
+								"name": "EV"
 							},
 							"defaultValue": "..."
 						},
 						{
-							"id": 28,
+							"id": 39,
 							"name": "margin",
 							"variant": "declaration",
 							"kind": 1024,
@@ -545,20 +694,19 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 29,
+									"line": 45,
 									"character": 2
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": 2,
-								"name": "Vec2",
-								"package": "rmmz-game"
+								"target": 12,
+								"name": "Vec2"
 							},
 							"defaultValue": "..."
 						},
 						{
-							"id": 33,
+							"id": 43,
 							"name": "mask",
 							"variant": "declaration",
 							"kind": 1024,
@@ -566,33 +714,34 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 34,
+									"line": 49,
 									"character": 2
 								}
 							],
 							"type": {
 								"type": "reference",
 								"target": {
-									"packageName": "rmmz-game",
-									"packagePath": "js/GameObject/Types.ts",
+									"packageName": "<unknown>",
+									"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Types.ts",
 									"qualifiedName": "PIXI.Graphics"
 								},
 								"name": "Graphics",
-								"package": "rmmz-game",
 								"qualifiedName": "PIXI.Graphics"
 							}
 						},
 						{
-							"id": 32,
+							"id": 38,
 							"name": "maxCols",
 							"variant": "declaration",
 							"kind": 1024,
-							"flags": {},
+							"flags": {
+								"isPublic": true
+							},
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 33,
-									"character": 2
+									"line": 44,
+									"character": 17
 								}
 							],
 							"type": {
@@ -602,7 +751,7 @@
 							"defaultValue": "Infinity"
 						},
 						{
-							"id": 31,
+							"id": 42,
 							"name": "round",
 							"variant": "declaration",
 							"kind": 1024,
@@ -610,7 +759,7 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 32,
+									"line": 48,
 									"character": 2
 								}
 							],
@@ -621,7 +770,7 @@
 							"defaultValue": "0"
 						},
 						{
-							"id": 22,
+							"id": 32,
 							"name": "_init",
 							"variant": "declaration",
 							"kind": 1024,
@@ -631,7 +780,7 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 24,
+									"line": 40,
 									"character": 9
 								}
 							],
@@ -642,7 +791,7 @@
 							"defaultValue": "false"
 						},
 						{
-							"id": 21,
+							"id": 31,
 							"name": "maskArea",
 							"variant": "declaration",
 							"kind": 1024,
@@ -652,24 +801,23 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 23,
+									"line": 39,
 									"character": 9
 								}
 							],
 							"type": {
 								"type": "reference",
 								"target": {
-									"packageName": "rmmz-game",
-									"packagePath": "js/GameObject/Types.ts",
+									"packageName": "<unknown>",
+									"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Types.ts",
 									"qualifiedName": "PIXI.Container"
 								},
 								"name": "Container",
-								"package": "rmmz-game",
 								"qualifiedName": "PIXI.Container"
 							}
 						},
 						{
-							"id": 88,
+							"id": 98,
 							"name": "_destroy",
 							"variant": "declaration",
 							"kind": 262144,
@@ -679,12 +827,12 @@
 							"sources": [
 								{
 									"fileName": "Component.ts",
-									"line": 8,
+									"line": 9,
 									"character": 6
 								}
 							],
 							"getSignature": {
-								"id": 89,
+								"id": 99,
 								"name": "_destroy",
 								"variant": "signature",
 								"kind": 524288,
@@ -694,7 +842,7 @@
 								"sources": [
 									{
 										"fileName": "Component.ts",
-										"line": 8,
+										"line": 9,
 										"character": 6
 									}
 								],
@@ -710,12 +858,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": -1,
+								"target": 239,
 								"name": "PIXIfeatureComponent._destroy"
 							}
 						},
 						{
-							"id": 90,
+							"id": 100,
 							"name": "enable",
 							"variant": "declaration",
 							"kind": 262144,
@@ -725,17 +873,17 @@
 							"sources": [
 								{
 									"fileName": "Component.ts",
-									"line": 11,
+									"line": 12,
 									"character": 6
 								},
 								{
 									"fileName": "Component.ts",
-									"line": 14,
+									"line": 15,
 									"character": 6
 								}
 							],
 							"getSignature": {
-								"id": 91,
+								"id": 101,
 								"name": "enable",
 								"variant": "signature",
 								"kind": 524288,
@@ -745,7 +893,7 @@
 								"sources": [
 									{
 										"fileName": "Component.ts",
-										"line": 11,
+										"line": 12,
 										"character": 6
 									}
 								],
@@ -766,7 +914,7 @@
 								}
 							},
 							"setSignature": {
-								"id": 92,
+								"id": 102,
 								"name": "enable",
 								"variant": "signature",
 								"kind": 1048576,
@@ -776,13 +924,13 @@
 								"sources": [
 									{
 										"fileName": "Component.ts",
-										"line": 14,
+										"line": 15,
 										"character": 6
 									}
 								],
 								"parameters": [
 									{
-										"id": 93,
+										"id": 103,
 										"name": "b",
 										"variant": "param",
 										"kind": 32768,
@@ -811,12 +959,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": -1,
+								"target": 241,
 								"name": "PIXIfeatureComponent.enable"
 							}
 						},
 						{
-							"id": 94,
+							"id": 104,
 							"name": "gameObject",
 							"variant": "declaration",
 							"kind": 262144,
@@ -826,17 +974,17 @@
 							"sources": [
 								{
 									"fileName": "Component.ts",
-									"line": 26,
+									"line": 27,
 									"character": 6
 								},
 								{
 									"fileName": "Component.ts",
-									"line": 29,
+									"line": 30,
 									"character": 6
 								}
 							],
 							"getSignature": {
-								"id": 95,
+								"id": 105,
 								"name": "gameObject",
 								"variant": "signature",
 								"kind": 524288,
@@ -846,19 +994,18 @@
 								"sources": [
 									{
 										"fileName": "Component.ts",
-										"line": 26,
+										"line": 27,
 										"character": 6
 									}
 								],
 								"type": {
 									"type": "reference",
 									"target": {
-										"packageName": "rmmz-game",
-										"packagePath": "js/GameObject/GameObject.ts",
+										"packageName": "<unknown>",
+										"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/GameObject.ts",
 										"qualifiedName": "GameObject"
 									},
-									"name": "GameObject",
-									"package": "rmmz-game"
+									"name": "GameObject"
 								},
 								"inheritedFrom": {
 									"type": "reference",
@@ -867,7 +1014,7 @@
 								}
 							},
 							"setSignature": {
-								"id": 96,
+								"id": 106,
 								"name": "gameObject",
 								"variant": "signature",
 								"kind": 1048576,
@@ -877,13 +1024,13 @@
 								"sources": [
 									{
 										"fileName": "Component.ts",
-										"line": 29,
+										"line": 30,
 										"character": 6
 									}
 								],
 								"parameters": [
 									{
-										"id": 97,
+										"id": 107,
 										"name": "g",
 										"variant": "param",
 										"kind": 32768,
@@ -891,12 +1038,11 @@
 										"type": {
 											"type": "reference",
 											"target": {
-												"packageName": "rmmz-game",
-												"packagePath": "js/GameObject/GameObject.ts",
+												"packageName": "<unknown>",
+												"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/GameObject.ts",
 												"qualifiedName": "GameObject"
 											},
-											"name": "GameObject",
-											"package": "rmmz-game"
+											"name": "GameObject"
 										}
 									}
 								],
@@ -912,12 +1058,12 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": -1,
+								"target": 245,
 								"name": "PIXIfeatureComponent.gameObject"
 							}
 						},
 						{
-							"id": 38,
+							"id": 48,
 							"name": "padding",
 							"variant": "declaration",
 							"kind": 262144,
@@ -925,17 +1071,17 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 44,
+									"line": 59,
 									"character": 6
 								},
 								{
 									"fileName": "Layout.ts",
-									"line": 47,
+									"line": 62,
 									"character": 6
 								}
 							],
 							"getSignature": {
-								"id": 39,
+								"id": 49,
 								"name": "padding",
 								"variant": "signature",
 								"kind": 524288,
@@ -943,19 +1089,18 @@
 								"sources": [
 									{
 										"fileName": "Layout.ts",
-										"line": 44,
+										"line": 59,
 										"character": 6
 									}
 								],
 								"type": {
 									"type": "reference",
-									"target": 2,
-									"name": "Vec2",
-									"package": "rmmz-game"
+									"target": 12,
+									"name": "Vec2"
 								}
 							},
 							"setSignature": {
-								"id": 40,
+								"id": 50,
 								"name": "padding",
 								"variant": "signature",
 								"kind": 1048576,
@@ -963,22 +1108,21 @@
 								"sources": [
 									{
 										"fileName": "Layout.ts",
-										"line": 47,
+										"line": 62,
 										"character": 6
 									}
 								],
 								"parameters": [
 									{
-										"id": 41,
+										"id": 51,
 										"name": "p",
 										"variant": "param",
 										"kind": 32768,
 										"flags": {},
 										"type": {
 											"type": "reference",
-											"target": 2,
-											"name": "Vec2",
-											"package": "rmmz-game"
+											"target": 12,
+											"name": "Vec2"
 										}
 									}
 								],
@@ -989,7 +1133,7 @@
 							}
 						},
 						{
-							"id": 34,
+							"id": 44,
 							"name": "size",
 							"variant": "declaration",
 							"kind": 262144,
@@ -997,17 +1141,17 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 35,
+									"line": 50,
 									"character": 6
 								},
 								{
 									"fileName": "Layout.ts",
-									"line": 38,
+									"line": 53,
 									"character": 6
 								}
 							],
 							"getSignature": {
-								"id": 35,
+								"id": 45,
 								"name": "size",
 								"variant": "signature",
 								"kind": 524288,
@@ -1015,19 +1159,18 @@
 								"sources": [
 									{
 										"fileName": "Layout.ts",
-										"line": 35,
+										"line": 50,
 										"character": 6
 									}
 								],
 								"type": {
 									"type": "reference",
-									"target": 2,
-									"name": "Vec2",
-									"package": "rmmz-game"
+									"target": 12,
+									"name": "Vec2"
 								}
 							},
 							"setSignature": {
-								"id": 36,
+								"id": 46,
 								"name": "size",
 								"variant": "signature",
 								"kind": 1048576,
@@ -1035,22 +1178,21 @@
 								"sources": [
 									{
 										"fileName": "Layout.ts",
-										"line": 38,
+										"line": 53,
 										"character": 6
 									}
 								],
 								"parameters": [
 									{
-										"id": 37,
+										"id": 47,
 										"name": "s",
 										"variant": "param",
 										"kind": 32768,
 										"flags": {},
 										"type": {
 											"type": "reference",
-											"target": 2,
-											"name": "Vec2",
-											"package": "rmmz-game"
+											"target": 12,
+											"name": "Vec2"
 										}
 									}
 								],
@@ -1061,7 +1203,7 @@
 							}
 						},
 						{
-							"id": 61,
+							"id": 71,
 							"name": "_check",
 							"variant": "declaration",
 							"kind": 2048,
@@ -1069,13 +1211,13 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 90,
+									"line": 105,
 									"character": 2
 								}
 							],
 							"signatures": [
 								{
-									"id": 62,
+									"id": 72,
 									"name": "_check",
 									"variant": "signature",
 									"kind": 4096,
@@ -1083,469 +1225,14 @@
 									"sources": [
 										{
 											"fileName": "Layout.ts",
-											"line": 90,
+											"line": 105,
 											"character": 2
 										}
 									],
 									"parameters": [
 										{
-											"id": 63,
+											"id": 73,
 											"name": "target",
-											"variant": "param",
-											"kind": 32768,
-											"flags": {},
-											"type": {
-												"type": "intrinsic",
-												"name": "any"
-											}
-										}
-									],
-									"type": {
-										"type": "intrinsic",
-										"name": "void"
-									}
-								}
-							]
-						},
-						{
-							"id": 57,
-							"name": "_Destroy",
-							"variant": "declaration",
-							"kind": 2048,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "Layout.ts",
-									"line": 82,
-									"character": 2
-								}
-							],
-							"signatures": [
-								{
-									"id": 58,
-									"name": "_Destroy",
-									"variant": "signature",
-									"kind": 4096,
-									"flags": {},
-									"sources": [
-										{
-											"fileName": "Layout.ts",
-											"line": 82,
-											"character": 2
-										}
-									],
-									"type": {
-										"type": "intrinsic",
-										"name": "void"
-									},
-									"overwrites": {
-										"type": "reference",
-										"target": -1,
-										"name": "PIXIfeatureComponent._Destroy"
-									}
-								}
-							],
-							"overwrites": {
-								"type": "reference",
-								"target": -1,
-								"name": "PIXIfeatureComponent._Destroy"
-							}
-						},
-						{
-							"id": 98,
-							"name": "_GameObjectUpdate",
-							"variant": "declaration",
-							"kind": 2048,
-							"flags": {
-								"isInherited": true
-							},
-							"sources": [
-								{
-									"fileName": "Component.ts",
-									"line": 34,
-									"character": 2
-								}
-							],
-							"signatures": [
-								{
-									"id": 99,
-									"name": "_GameObjectUpdate",
-									"variant": "signature",
-									"kind": 4096,
-									"flags": {
-										"isInherited": true
-									},
-									"sources": [
-										{
-											"fileName": "Component.ts",
-											"line": 34,
-											"character": 2
-										}
-									],
-									"type": {
-										"type": "intrinsic",
-										"name": "void"
-									},
-									"inheritedFrom": {
-										"type": "reference",
-										"target": -1,
-										"name": "PIXIfeatureComponent._GameObjectUpdate"
-									}
-								}
-							],
-							"inheritedFrom": {
-								"type": "reference",
-								"target": -1,
-								"name": "PIXIfeatureComponent._GameObjectUpdate"
-							}
-						},
-						{
-							"id": 59,
-							"name": "_Resize",
-							"variant": "declaration",
-							"kind": 2048,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "Layout.ts",
-									"line": 85,
-									"character": 2
-								}
-							],
-							"signatures": [
-								{
-									"id": 60,
-									"name": "_Resize",
-									"variant": "signature",
-									"kind": 4096,
-									"flags": {},
-									"sources": [
-										{
-											"fileName": "Layout.ts",
-											"line": 85,
-											"character": 2
-										}
-									],
-									"type": {
-										"type": "intrinsic",
-										"name": "void"
-									}
-								}
-							]
-						},
-						{
-							"id": 76,
-							"name": "_simpleChildSize",
-							"variant": "declaration",
-							"kind": 2048,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "Layout.ts",
-									"line": 120,
-									"character": 2
-								}
-							],
-							"signatures": [
-								{
-									"id": 77,
-									"name": "_simpleChildSize",
-									"variant": "signature",
-									"kind": 4096,
-									"flags": {},
-									"sources": [
-										{
-											"fileName": "Layout.ts",
-											"line": 120,
-											"character": 2
-										}
-									],
-									"parameters": [
-										{
-											"id": 78,
-											"name": "c",
-											"variant": "param",
-											"kind": 32768,
-											"flags": {},
-											"type": {
-												"type": "intrinsic",
-												"name": "any"
-											}
-										}
-									],
-									"type": {
-										"type": "reflection",
-										"declaration": {
-											"id": 79,
-											"name": "__type",
-											"variant": "declaration",
-											"kind": 65536,
-											"flags": {},
-											"children": [
-												{
-													"id": 81,
-													"name": "height",
-													"variant": "declaration",
-													"kind": 1024,
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "Layout.ts",
-															"line": 121,
-															"character": 27
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "any"
-													},
-													"defaultValue": "c.height"
-												},
-												{
-													"id": 80,
-													"name": "width",
-													"variant": "declaration",
-													"kind": 1024,
-													"flags": {},
-													"sources": [
-														{
-															"fileName": "Layout.ts",
-															"line": 121,
-															"character": 12
-														}
-													],
-													"type": {
-														"type": "intrinsic",
-														"name": "any"
-													},
-													"defaultValue": "c.width"
-												}
-											],
-											"groups": [
-												{
-													"title": "Properties",
-													"children": [
-														81,
-														80
-													]
-												}
-											],
-											"sources": [
-												{
-													"fileName": "Layout.ts",
-													"line": 121,
-													"character": 11
-												}
-											]
-										}
-									}
-								}
-							]
-						},
-						{
-							"id": 82,
-							"name": "_updateLayoutBase",
-							"variant": "declaration",
-							"kind": 2048,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "Layout.ts",
-									"line": 123,
-									"character": 2
-								}
-							],
-							"signatures": [
-								{
-									"id": 83,
-									"name": "_updateLayoutBase",
-									"variant": "signature",
-									"kind": 4096,
-									"flags": {},
-									"sources": [
-										{
-											"fileName": "Layout.ts",
-											"line": 123,
-											"character": 2
-										}
-									],
-									"type": {
-										"type": "intrinsic",
-										"name": "void"
-									}
-								}
-							]
-						},
-						{
-							"id": 100,
-							"name": "Awake",
-							"variant": "declaration",
-							"kind": 2048,
-							"flags": {
-								"isInherited": true
-							},
-							"sources": [
-								{
-									"fileName": "Component.ts",
-									"line": 35,
-									"character": 2
-								}
-							],
-							"signatures": [
-								{
-									"id": 101,
-									"name": "Awake",
-									"variant": "signature",
-									"kind": 4096,
-									"flags": {
-										"isInherited": true
-									},
-									"sources": [
-										{
-											"fileName": "Component.ts",
-											"line": 35,
-											"character": 2
-										}
-									],
-									"type": {
-										"type": "intrinsic",
-										"name": "void"
-									},
-									"inheritedFrom": {
-										"type": "reference",
-										"target": -1,
-										"name": "PIXIfeatureComponent.Awake"
-									}
-								}
-							],
-							"inheritedFrom": {
-								"type": "reference",
-								"target": -1,
-								"name": "PIXIfeatureComponent.Awake"
-							}
-						},
-						{
-							"id": 70,
-							"name": "Children",
-							"variant": "declaration",
-							"kind": 2048,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "Layout.ts",
-									"line": 100,
-									"character": 2
-								}
-							],
-							"signatures": [
-								{
-									"id": 71,
-									"name": "Children",
-									"variant": "signature",
-									"kind": 4096,
-									"flags": {},
-									"sources": [
-										{
-											"fileName": "Layout.ts",
-											"line": 100,
-											"character": 2
-										}
-									],
-									"type": {
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"target": {
-												"packageName": "rmmz-game",
-												"packagePath": "js/GameObject/Types.ts",
-												"qualifiedName": "PIXI.Container"
-											},
-											"name": "Container",
-											"package": "rmmz-game",
-											"qualifiedName": "PIXI.Container"
-										}
-									}
-								}
-							]
-						},
-						{
-							"id": 52,
-							"name": "OnChange",
-							"variant": "declaration",
-							"kind": 2048,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "Layout.ts",
-									"line": 70,
-									"character": 2
-								}
-							],
-							"signatures": [
-								{
-									"id": 53,
-									"name": "OnChange",
-									"variant": "signature",
-									"kind": 4096,
-									"flags": {},
-									"sources": [
-										{
-											"fileName": "Layout.ts",
-											"line": 70,
-											"character": 2
-										}
-									],
-									"parameters": [
-										{
-											"id": 54,
-											"name": "target",
-											"variant": "param",
-											"kind": 32768,
-											"flags": {},
-											"type": {
-												"type": "intrinsic",
-												"name": "any"
-											}
-										}
-									],
-									"type": {
-										"type": "intrinsic",
-										"name": "void"
-									}
-								}
-							]
-						},
-						{
-							"id": 64,
-							"name": "SetChildPosGetter",
-							"variant": "declaration",
-							"kind": 2048,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "Layout.ts",
-									"line": 94,
-									"character": 2
-								}
-							],
-							"signatures": [
-								{
-									"id": 65,
-									"name": "SetChildPosGetter",
-									"variant": "signature",
-									"kind": 4096,
-									"flags": {},
-									"sources": [
-										{
-											"fileName": "Layout.ts",
-											"line": 94,
-											"character": 2
-										}
-									],
-									"parameters": [
-										{
-											"id": 66,
-											"name": "fn",
 											"variant": "param",
 											"kind": 32768,
 											"flags": {},
@@ -1564,7 +1251,7 @@
 						},
 						{
 							"id": 67,
-							"name": "SetChildSizeGetter",
+							"name": "_Destroy",
 							"variant": "declaration",
 							"kind": 2048,
 							"flags": {},
@@ -1578,7 +1265,7 @@
 							"signatures": [
 								{
 									"id": 68,
-									"name": "SetChildSizeGetter",
+									"name": "_Destroy",
 									"variant": "signature",
 									"kind": 4096,
 									"flags": {},
@@ -1589,9 +1276,416 @@
 											"character": 2
 										}
 									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"overwrites": {
+										"type": "reference",
+										"target": 258,
+										"name": "PIXIfeatureComponent._Destroy"
+									}
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"target": 257,
+								"name": "PIXIfeatureComponent._Destroy"
+							}
+						},
+						{
+							"id": 108,
+							"name": "_GameObjectUpdate",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "Component.ts",
+									"line": 35,
+									"character": 2
+								}
+							],
+							"signatures": [
+								{
+									"id": 109,
+									"name": "_GameObjectUpdate",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isInherited": true
+									},
+									"sources": [
+										{
+											"fileName": "Component.ts",
+											"line": 35,
+											"character": 2
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 250,
+										"name": "PIXIfeatureComponent._GameObjectUpdate"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 249,
+								"name": "PIXIfeatureComponent._GameObjectUpdate"
+							}
+						},
+						{
+							"id": 69,
+							"name": "_Resize",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Layout.ts",
+									"line": 100,
+									"character": 2
+								}
+							],
+							"signatures": [
+								{
+									"id": 70,
+									"name": "_Resize",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "Layout.ts",
+											"line": 100,
+											"character": 2
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 86,
+							"name": "_simpleChildSize",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Layout.ts",
+									"line": 135,
+									"character": 2
+								}
+							],
+							"signatures": [
+								{
+									"id": 87,
+									"name": "_simpleChildSize",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "Layout.ts",
+											"line": 135,
+											"character": 2
+										}
+									],
 									"parameters": [
 										{
-											"id": 69,
+											"id": 88,
+											"name": "c",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 89,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 91,
+													"name": "height",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "Layout.ts",
+															"line": 136,
+															"character": 27
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "any"
+													},
+													"defaultValue": "c.height"
+												},
+												{
+													"id": 90,
+													"name": "width",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "Layout.ts",
+															"line": 136,
+															"character": 12
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "any"
+													},
+													"defaultValue": "c.width"
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														91,
+														90
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "Layout.ts",
+													"line": 136,
+													"character": 11
+												}
+											]
+										}
+									}
+								}
+							]
+						},
+						{
+							"id": 92,
+							"name": "_updateLayoutBase",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Layout.ts",
+									"line": 138,
+									"character": 2
+								}
+							],
+							"signatures": [
+								{
+									"id": 93,
+									"name": "_updateLayoutBase",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "Layout.ts",
+											"line": 138,
+											"character": 2
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 110,
+							"name": "Awake",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "Component.ts",
+									"line": 36,
+									"character": 2
+								}
+							],
+							"signatures": [
+								{
+									"id": 111,
+									"name": "Awake",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isInherited": true
+									},
+									"sources": [
+										{
+											"fileName": "Component.ts",
+											"line": 36,
+											"character": 2
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": 252,
+										"name": "PIXIfeatureComponent.Awake"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 251,
+								"name": "PIXIfeatureComponent.Awake"
+							}
+						},
+						{
+							"id": 80,
+							"name": "Children",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Layout.ts",
+									"line": 115,
+									"character": 2
+								}
+							],
+							"signatures": [
+								{
+									"id": 81,
+									"name": "Children",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "Layout.ts",
+											"line": 115,
+											"character": 2
+										}
+									],
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"target": {
+												"packageName": "<unknown>",
+												"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Types.ts",
+												"qualifiedName": "PIXI.Container"
+											},
+											"name": "Container",
+											"qualifiedName": "PIXI.Container"
+										}
+									}
+								}
+							]
+						},
+						{
+							"id": 62,
+							"name": "OnChange",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Layout.ts",
+									"line": 85,
+									"character": 2
+								}
+							],
+							"signatures": [
+								{
+									"id": 63,
+									"name": "OnChange",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "Layout.ts",
+											"line": 85,
+											"character": 2
+										}
+									],
+									"parameters": [
+										{
+											"id": 64,
+											"name": "target",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 74,
+							"name": "SetChildPosGetter",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Layout.ts",
+									"line": 109,
+									"character": 2
+								}
+							],
+							"signatures": [
+								{
+									"id": 75,
+									"name": "SetChildPosGetter",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "Layout.ts",
+											"line": 109,
+											"character": 2
+										}
+									],
+									"parameters": [
+										{
+											"id": 76,
 											"name": "fn",
 											"variant": "param",
 											"kind": 32768,
@@ -1610,7 +1704,54 @@
 							]
 						},
 						{
-							"id": 55,
+							"id": 77,
+							"name": "SetChildSizeGetter",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Layout.ts",
+									"line": 112,
+									"character": 2
+								}
+							],
+							"signatures": [
+								{
+									"id": 78,
+									"name": "SetChildSizeGetter",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "Layout.ts",
+											"line": 112,
+											"character": 2
+										}
+									],
+									"parameters": [
+										{
+											"id": 79,
+											"name": "fn",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 65,
 							"name": "Start",
 							"variant": "declaration",
 							"kind": 2048,
@@ -1618,13 +1759,13 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 78,
+									"line": 93,
 									"character": 2
 								}
 							],
 							"signatures": [
 								{
-									"id": 56,
+									"id": 66,
 									"name": "Start",
 									"variant": "signature",
 									"kind": 4096,
@@ -1632,7 +1773,7 @@
 									"sources": [
 										{
 											"fileName": "Layout.ts",
-											"line": 78,
+											"line": 93,
 											"character": 2
 										}
 									],
@@ -1642,19 +1783,19 @@
 									},
 									"overwrites": {
 										"type": "reference",
-										"target": -1,
+										"target": 254,
 										"name": "PIXIfeatureComponent.Start"
 									}
 								}
 							],
 							"overwrites": {
 								"type": "reference",
-								"target": -1,
+								"target": 253,
 								"name": "PIXIfeatureComponent.Start"
 							}
 						},
 						{
-							"id": 72,
+							"id": 82,
 							"name": "Update",
 							"variant": "declaration",
 							"kind": 2048,
@@ -1662,13 +1803,13 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 105,
+									"line": 120,
 									"character": 2
 								}
 							],
 							"signatures": [
 								{
-									"id": 73,
+									"id": 83,
 									"name": "Update",
 									"variant": "signature",
 									"kind": 4096,
@@ -1676,7 +1817,7 @@
 									"sources": [
 										{
 											"fileName": "Layout.ts",
-											"line": 105,
+											"line": 120,
 											"character": 2
 										}
 									],
@@ -1686,19 +1827,19 @@
 									},
 									"overwrites": {
 										"type": "reference",
-										"target": -1,
+										"target": 256,
 										"name": "PIXIfeatureComponent.Update"
 									}
 								}
 							],
 							"overwrites": {
 								"type": "reference",
-								"target": -1,
+								"target": 255,
 								"name": "PIXIfeatureComponent.Update"
 							}
 						},
 						{
-							"id": 74,
+							"id": 84,
 							"name": "UpdateLayout",
 							"variant": "declaration",
 							"kind": 2048,
@@ -1706,13 +1847,13 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 116,
+									"line": 131,
 									"character": 2
 								}
 							],
 							"signatures": [
 								{
-									"id": 75,
+									"id": 85,
 									"name": "UpdateLayout",
 									"variant": "signature",
 									"kind": 4096,
@@ -1720,7 +1861,7 @@
 									"sources": [
 										{
 											"fileName": "Layout.ts",
-											"line": 116,
+											"line": 131,
 											"character": 2
 										}
 									],
@@ -1736,90 +1877,87 @@
 						{
 							"title": "Constructors",
 							"children": [
-								23
+								33
 							]
 						},
 						{
 							"title": "Properties",
 							"children": [
+								52,
+								55,
+								36,
+								96,
+								95,
+								37,
+								40,
+								41,
+								97,
+								94,
+								35,
+								39,
+								43,
+								38,
 								42,
-								45,
-								26,
-								86,
-								85,
-								27,
-								29,
-								30,
-								87,
-								84,
-								25,
-								28,
-								33,
 								32,
-								31,
-								22,
-								21
+								31
 							]
 						},
 						{
 							"title": "Accessors",
 							"children": [
-								88,
-								90,
-								94,
-								38,
-								34
+								98,
+								100,
+								104,
+								48,
+								44
 							]
 						},
 						{
 							"title": "Methods",
 							"children": [
-								61,
-								57,
-								98,
-								59,
-								76,
-								82,
-								100,
-								70,
-								52,
-								64,
+								71,
 								67,
-								55,
-								72,
-								74
+								108,
+								69,
+								86,
+								92,
+								110,
+								80,
+								62,
+								74,
+								77,
+								65,
+								82,
+								84
 							]
 						}
 					],
 					"sources": [
 						{
 							"fileName": "Layout.ts",
-							"line": 21,
+							"line": 37,
 							"character": 13
 						}
 					],
 					"extendedTypes": [
 						{
 							"type": "reference",
-							"target": {
-								"packageName": "rmmz-game",
-								"packagePath": "js/GameObject/Component.ts",
-								"qualifiedName": "PIXIfeatureComponent"
-							},
-							"name": "PIXIfeatureComponent",
-							"package": "rmmz-game"
+							"target": 232,
+							"name": "PIXIfeatureComponent"
 						}
 					]
 				},
 				{
-					"id": 2,
+					"id": 12,
 					"name": "Vec2",
 					"variant": "declaration",
 					"kind": 128,
-					"flags": {},
+					"flags": {
+						"isPublic": true
+					},
 					"children": [
 						{
-							"id": 3,
+							"id": 13,
 							"name": "constructor",
 							"variant": "declaration",
 							"kind": 512,
@@ -1827,13 +1965,13 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 9,
+									"line": 25,
 									"character": 2
 								}
 							],
 							"signatures": [
 								{
-									"id": 4,
+									"id": 14,
 									"name": "Vec2",
 									"variant": "signature",
 									"kind": 16384,
@@ -1841,13 +1979,13 @@
 									"sources": [
 										{
 											"fileName": "Layout.ts",
-											"line": 9,
+											"line": 25,
 											"character": 2
 										}
 									],
 									"parameters": [
 										{
-											"id": 5,
+											"id": 15,
 											"name": "x",
 											"variant": "param",
 											"kind": 32768,
@@ -1859,7 +1997,7 @@
 											"defaultValue": "0"
 										},
 										{
-											"id": 6,
+											"id": 16,
 											"name": "y",
 											"variant": "param",
 											"kind": 32768,
@@ -1873,15 +2011,14 @@
 									],
 									"type": {
 										"type": "reference",
-										"target": 2,
-										"name": "Vec2",
-										"package": "rmmz-game"
+										"target": 12,
+										"name": "Vec2"
 									}
 								}
 							]
 						},
 						{
-							"id": 7,
+							"id": 17,
 							"name": "_x",
 							"variant": "declaration",
 							"kind": 1024,
@@ -1889,8 +2026,8 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 7,
-									"character": 2
+									"line": 23,
+									"character": 3
 								}
 							],
 							"type": {
@@ -1900,7 +2037,7 @@
 							"defaultValue": "0"
 						},
 						{
-							"id": 8,
+							"id": 18,
 							"name": "_y",
 							"variant": "declaration",
 							"kind": 1024,
@@ -1908,7 +2045,7 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 8,
+									"line": 24,
 									"character": 2
 								}
 							],
@@ -1919,7 +2056,7 @@
 							"defaultValue": "0"
 						},
 						{
-							"id": 15,
+							"id": 25,
 							"name": "height",
 							"variant": "declaration",
 							"kind": 262144,
@@ -1927,12 +2064,12 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 16,
+									"line": 32,
 									"character": 6
 								}
 							],
 							"getSignature": {
-								"id": 16,
+								"id": 26,
 								"name": "height",
 								"variant": "signature",
 								"kind": 524288,
@@ -1940,7 +2077,7 @@
 								"sources": [
 									{
 										"fileName": "Layout.ts",
-										"line": 16,
+										"line": 32,
 										"character": 6
 									}
 								],
@@ -1951,7 +2088,7 @@
 							}
 						},
 						{
-							"id": 13,
+							"id": 23,
 							"name": "width",
 							"variant": "declaration",
 							"kind": 262144,
@@ -1959,12 +2096,12 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 15,
+									"line": 31,
 									"character": 6
 								}
 							],
 							"getSignature": {
-								"id": 14,
+								"id": 24,
 								"name": "width",
 								"variant": "signature",
 								"kind": 524288,
@@ -1972,7 +2109,7 @@
 								"sources": [
 									{
 										"fileName": "Layout.ts",
-										"line": 15,
+										"line": 31,
 										"character": 6
 									}
 								],
@@ -1983,7 +2120,7 @@
 							}
 						},
 						{
-							"id": 9,
+							"id": 19,
 							"name": "x",
 							"variant": "declaration",
 							"kind": 262144,
@@ -1991,12 +2128,12 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 13,
+									"line": 29,
 									"character": 6
 								}
 							],
 							"getSignature": {
-								"id": 10,
+								"id": 20,
 								"name": "x",
 								"variant": "signature",
 								"kind": 524288,
@@ -2004,7 +2141,7 @@
 								"sources": [
 									{
 										"fileName": "Layout.ts",
-										"line": 13,
+										"line": 29,
 										"character": 6
 									}
 								],
@@ -2015,7 +2152,7 @@
 							}
 						},
 						{
-							"id": 11,
+							"id": 21,
 							"name": "y",
 							"variant": "declaration",
 							"kind": 262144,
@@ -2023,12 +2160,12 @@
 							"sources": [
 								{
 									"fileName": "Layout.ts",
-									"line": 14,
+									"line": 30,
 									"character": 6
 								}
 							],
 							"getSignature": {
-								"id": 12,
+								"id": 22,
 								"name": "y",
 								"variant": "signature",
 								"kind": 524288,
@@ -2036,7 +2173,7 @@
 								"sources": [
 									{
 										"fileName": "Layout.ts",
-										"line": 14,
+										"line": 30,
 										"character": 6
 									}
 								],
@@ -2051,47 +2188,109 @@
 						{
 							"title": "Constructors",
 							"children": [
-								3
+								13
 							]
 						},
 						{
 							"title": "Properties",
 							"children": [
-								7,
-								8
+								17,
+								18
 							]
 						},
 						{
 							"title": "Accessors",
 							"children": [
-								15,
-								13,
-								9,
-								11
+								25,
+								23,
+								19,
+								21
 							]
 						}
 					],
 					"sources": [
 						{
 							"fileName": "Layout.ts",
-							"line": 6,
+							"line": 22,
 							"character": 13
+						}
+					]
+				},
+				{
+					"id": 6,
+					"name": "A",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"children": [
+						{
+							"id": 7,
+							"name": "tt",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Layout.ts",
+									"line": 14,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								7
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "Layout.ts",
+							"line": 13,
+							"character": 17
+						}
+					],
+					"implementedBy": [
+						{
+							"type": "reference",
+							"target": 8,
+							"name": "B"
 						}
 					]
 				}
 			],
 			"groups": [
 				{
+					"title": "Namespaces",
+					"children": [
+						2
+					]
+				},
+				{
 					"title": "Enumerations",
 					"children": [
-						17
+						27
 					]
 				},
 				{
 					"title": "Classes",
 					"children": [
-						20,
-						2
+						8,
+						30,
+						12
+					]
+				},
+				{
+					"title": "Interfaces",
+					"children": [
+						6
 					]
 				}
 			],
@@ -2104,14 +2303,16 @@
 			]
 		},
 		{
-			"id": 102,
+			"id": 112,
 			"name": "Component",
 			"variant": "declaration",
 			"kind": 128,
-			"flags": {},
+			"flags": {
+				"isAbstract": true
+			},
 			"children": [
 				{
-					"id": 103,
+					"id": 113,
 					"name": "constructor",
 					"variant": "declaration",
 					"kind": 512,
@@ -2119,13 +2320,13 @@
 					"sources": [
 						{
 							"fileName": "Component.ts",
-							"line": 33,
+							"line": 34,
 							"character": 2
 						}
 					],
 					"signatures": [
 						{
-							"id": 104,
+							"id": 114,
 							"name": "Component",
 							"variant": "signature",
 							"kind": 16384,
@@ -2133,71 +2334,21 @@
 							"sources": [
 								{
 									"fileName": "Component.ts",
-									"line": 33,
+									"line": 34,
 									"character": 2
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": 102,
-								"name": "Component",
-								"package": "rmmz-game"
+								"target": 112,
+								"name": "Component"
 							}
 						}
 					]
 				},
 				{
-					"id": 106,
+					"id": 116,
 					"name": "_enable",
-					"variant": "declaration",
-					"kind": 1024,
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "Component.ts",
-							"line": 6,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "reference",
-						"target": {
-							"packageName": "typescript",
-							"packagePath": "lib/lib.es5.d.ts",
-							"qualifiedName": "Boolean"
-						},
-						"name": "Boolean",
-						"package": "typescript"
-					},
-					"defaultValue": "true"
-				},
-				{
-					"id": 105,
-					"name": "_gameObject",
-					"variant": "declaration",
-					"kind": 1024,
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "Component.ts",
-							"line": 5,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "reference",
-						"target": {
-							"packageName": "rmmz-game",
-							"packagePath": "js/GameObject/GameObject.ts",
-							"qualifiedName": "GameObject"
-						},
-						"name": "GameObject",
-						"package": "rmmz-game"
-					}
-				},
-				{
-					"id": 107,
-					"name": "_start",
 					"variant": "declaration",
 					"kind": 1024,
 					"flags": {},
@@ -2218,10 +2369,58 @@
 						"name": "Boolean",
 						"package": "typescript"
 					},
+					"defaultValue": "true"
+				},
+				{
+					"id": 115,
+					"name": "_gameObject",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 6,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"packageName": "<unknown>",
+							"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/GameObject.ts",
+							"qualifiedName": "GameObject"
+						},
+						"name": "GameObject"
+					}
+				},
+				{
+					"id": 117,
+					"name": "_start",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 8,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"packageName": "typescript",
+							"packagePath": "lib/lib.es5.d.ts",
+							"qualifiedName": "Boolean"
+						},
+						"name": "Boolean",
+						"package": "typescript"
+					},
 					"defaultValue": "false"
 				},
 				{
-					"id": 108,
+					"id": 118,
 					"name": "_destroy",
 					"variant": "declaration",
 					"kind": 262144,
@@ -2229,12 +2428,12 @@
 					"sources": [
 						{
 							"fileName": "Component.ts",
-							"line": 8,
+							"line": 9,
 							"character": 6
 						}
 					],
 					"getSignature": {
-						"id": 109,
+						"id": 119,
 						"name": "_destroy",
 						"variant": "signature",
 						"kind": 524288,
@@ -2242,7 +2441,7 @@
 						"sources": [
 							{
 								"fileName": "Component.ts",
-								"line": 8,
+								"line": 9,
 								"character": 6
 							}
 						],
@@ -2253,7 +2452,7 @@
 					}
 				},
 				{
-					"id": 110,
+					"id": 120,
 					"name": "enable",
 					"variant": "declaration",
 					"kind": 262144,
@@ -2261,17 +2460,17 @@
 					"sources": [
 						{
 							"fileName": "Component.ts",
-							"line": 11,
+							"line": 12,
 							"character": 6
 						},
 						{
 							"fileName": "Component.ts",
-							"line": 14,
+							"line": 15,
 							"character": 6
 						}
 					],
 					"getSignature": {
-						"id": 111,
+						"id": 121,
 						"name": "enable",
 						"variant": "signature",
 						"kind": 524288,
@@ -2279,7 +2478,7 @@
 						"sources": [
 							{
 								"fileName": "Component.ts",
-								"line": 11,
+								"line": 12,
 								"character": 6
 							}
 						],
@@ -2295,7 +2494,7 @@
 						}
 					},
 					"setSignature": {
-						"id": 112,
+						"id": 122,
 						"name": "enable",
 						"variant": "signature",
 						"kind": 1048576,
@@ -2303,13 +2502,13 @@
 						"sources": [
 							{
 								"fileName": "Component.ts",
-								"line": 14,
+								"line": 15,
 								"character": 6
 							}
 						],
 						"parameters": [
 							{
-								"id": 113,
+								"id": 123,
 								"name": "b",
 								"variant": "param",
 								"kind": 32768,
@@ -2333,7 +2532,7 @@
 					}
 				},
 				{
-					"id": 114,
+					"id": 124,
 					"name": "gameObject",
 					"variant": "declaration",
 					"kind": 262144,
@@ -2341,17 +2540,17 @@
 					"sources": [
 						{
 							"fileName": "Component.ts",
-							"line": 26,
+							"line": 27,
 							"character": 6
 						},
 						{
 							"fileName": "Component.ts",
-							"line": 29,
+							"line": 30,
 							"character": 6
 						}
 					],
 					"getSignature": {
-						"id": 115,
+						"id": 125,
 						"name": "gameObject",
 						"variant": "signature",
 						"kind": 524288,
@@ -2359,23 +2558,22 @@
 						"sources": [
 							{
 								"fileName": "Component.ts",
-								"line": 26,
+								"line": 27,
 								"character": 6
 							}
 						],
 						"type": {
 							"type": "reference",
 							"target": {
-								"packageName": "rmmz-game",
-								"packagePath": "js/GameObject/GameObject.ts",
+								"packageName": "<unknown>",
+								"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/GameObject.ts",
 								"qualifiedName": "GameObject"
 							},
-							"name": "GameObject",
-							"package": "rmmz-game"
+							"name": "GameObject"
 						}
 					},
 					"setSignature": {
-						"id": 116,
+						"id": 126,
 						"name": "gameObject",
 						"variant": "signature",
 						"kind": 1048576,
@@ -2383,13 +2581,13 @@
 						"sources": [
 							{
 								"fileName": "Component.ts",
-								"line": 29,
+								"line": 30,
 								"character": 6
 							}
 						],
 						"parameters": [
 							{
-								"id": 117,
+								"id": 127,
 								"name": "g",
 								"variant": "param",
 								"kind": 32768,
@@ -2397,12 +2595,11 @@
 								"type": {
 									"type": "reference",
 									"target": {
-										"packageName": "rmmz-game",
-										"packagePath": "js/GameObject/GameObject.ts",
+										"packageName": "<unknown>",
+										"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/GameObject.ts",
 										"qualifiedName": "GameObject"
 									},
-									"name": "GameObject",
-									"package": "rmmz-game"
+									"name": "GameObject"
 								}
 							}
 						],
@@ -2413,7 +2610,7 @@
 					}
 				},
 				{
-					"id": 126,
+					"id": 136,
 					"name": "_Destroy",
 					"variant": "declaration",
 					"kind": 2048,
@@ -2421,13 +2618,13 @@
 					"sources": [
 						{
 							"fileName": "Component.ts",
-							"line": 38,
+							"line": 39,
 							"character": 2
 						}
 					],
 					"signatures": [
 						{
-							"id": 127,
+							"id": 137,
 							"name": "_Destroy",
 							"variant": "signature",
 							"kind": 4096,
@@ -2435,7 +2632,7 @@
 							"sources": [
 								{
 									"fileName": "Component.ts",
-									"line": 38,
+									"line": 39,
 									"character": 2
 								}
 							],
@@ -2447,42 +2644,8 @@
 					]
 				},
 				{
-					"id": 118,
+					"id": 128,
 					"name": "_GameObjectUpdate",
-					"variant": "declaration",
-					"kind": 2048,
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "Component.ts",
-							"line": 34,
-							"character": 2
-						}
-					],
-					"signatures": [
-						{
-							"id": 119,
-							"name": "_GameObjectUpdate",
-							"variant": "signature",
-							"kind": 4096,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "Component.ts",
-									"line": 34,
-									"character": 2
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 120,
-					"name": "Awake",
 					"variant": "declaration",
 					"kind": 2048,
 					"flags": {},
@@ -2495,8 +2658,8 @@
 					],
 					"signatures": [
 						{
-							"id": 121,
-							"name": "Awake",
+							"id": 129,
+							"name": "_GameObjectUpdate",
 							"variant": "signature",
 							"kind": 4096,
 							"flags": {},
@@ -2515,8 +2678,8 @@
 					]
 				},
 				{
-					"id": 122,
-					"name": "Start",
+					"id": 130,
+					"name": "Awake",
 					"variant": "declaration",
 					"kind": 2048,
 					"flags": {},
@@ -2529,8 +2692,8 @@
 					],
 					"signatures": [
 						{
-							"id": 123,
-							"name": "Start",
+							"id": 131,
+							"name": "Awake",
 							"variant": "signature",
 							"kind": 4096,
 							"flags": {},
@@ -2549,8 +2712,8 @@
 					]
 				},
 				{
-					"id": 124,
-					"name": "Update",
+					"id": 132,
+					"name": "Start",
 					"variant": "declaration",
 					"kind": 2048,
 					"flags": {},
@@ -2563,8 +2726,8 @@
 					],
 					"signatures": [
 						{
-							"id": 125,
-							"name": "Update",
+							"id": 133,
+							"name": "Start",
 							"variant": "signature",
 							"kind": 4096,
 							"flags": {},
@@ -2581,59 +2744,100 @@
 							}
 						}
 					]
+				},
+				{
+					"id": 134,
+					"name": "Update",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 38,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 135,
+							"name": "Update",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Component.ts",
+									"line": 38,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
 				}
 			],
 			"groups": [
 				{
 					"title": "Constructors",
 					"children": [
-						103
+						113
 					]
 				},
 				{
 					"title": "Properties",
 					"children": [
-						106,
-						105,
-						107
+						116,
+						115,
+						117
 					]
 				},
 				{
 					"title": "Accessors",
 					"children": [
-						108,
-						110,
-						114
+						118,
+						120,
+						124
 					]
 				},
 				{
 					"title": "Methods",
 					"children": [
-						126,
-						118,
-						120,
-						122,
-						124
+						136,
+						128,
+						130,
+						132,
+						134
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "Component.ts",
-					"line": 4,
-					"character": 13
+					"line": 5,
+					"character": 22
+				}
+			],
+			"extendedBy": [
+				{
+					"type": "reference",
+					"target": 232,
+					"name": "PIXIfeatureComponent"
 				}
 			]
 		},
 		{
-			"id": 128,
+			"id": 138,
 			"name": "EV",
 			"variant": "declaration",
 			"kind": 128,
 			"flags": {},
 			"children": [
 				{
-					"id": 129,
+					"id": 139,
 					"name": "constructor",
 					"variant": "declaration",
 					"kind": 512,
@@ -2647,7 +2851,7 @@
 					],
 					"signatures": [
 						{
-							"id": 130,
+							"id": 140,
 							"name": "EV",
 							"variant": "signature",
 							"kind": 16384,
@@ -2661,15 +2865,14 @@
 							],
 							"type": {
 								"type": "reference",
-								"target": 128,
-								"name": "EV",
-								"package": "rmmz-game"
+								"target": 138,
+								"name": "EV"
 							}
 						}
 					]
 				},
 				{
-					"id": 131,
+					"id": 141,
 					"name": "events",
 					"variant": "declaration",
 					"kind": 1024,
@@ -2714,14 +2917,14 @@
 									{
 										"type": "reflection",
 										"declaration": {
-											"id": 132,
+											"id": 142,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 135,
+													"id": 145,
 													"name": "once",
 													"variant": "declaration",
 													"kind": 1024,
@@ -2739,7 +2942,7 @@
 													}
 												},
 												{
-													"id": 134,
+													"id": 144,
 													"name": "size",
 													"variant": "declaration",
 													"kind": 1024,
@@ -2757,7 +2960,7 @@
 													}
 												},
 												{
-													"id": 133,
+													"id": 143,
 													"name": "z",
 													"variant": "declaration",
 													"kind": 1024,
@@ -2779,9 +2982,9 @@
 												{
 													"title": "Properties",
 													"children": [
-														135,
-														134,
-														133
+														145,
+														144,
+														143
 													]
 												}
 											],
@@ -2804,7 +3007,7 @@
 					}
 				},
 				{
-					"id": 182,
+					"id": 192,
 					"name": "_emit",
 					"variant": "declaration",
 					"kind": 2048,
@@ -2818,7 +3021,7 @@
 					],
 					"signatures": [
 						{
-							"id": 183,
+							"id": 193,
 							"name": "_emit",
 							"variant": "signature",
 							"kind": 4096,
@@ -2832,7 +3035,7 @@
 							],
 							"parameters": [
 								{
-									"id": 184,
+									"id": 194,
 									"name": "options",
 									"variant": "param",
 									"kind": 32768,
@@ -2843,7 +3046,7 @@
 									}
 								},
 								{
-									"id": 185,
+									"id": 195,
 									"name": "cb",
 									"variant": "param",
 									"kind": 32768,
@@ -2854,8 +3057,244 @@
 									}
 								},
 								{
-									"id": 186,
+									"id": 196,
 									"name": "list",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 197,
+									"name": "args",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isRest": true
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "any"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 168,
+					"name": "clear",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "EV.ts",
+							"line": 35,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 169,
+							"name": "clear",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "EV.ts",
+									"line": 35,
+									"character": 2
+								}
+							],
+							"parameters": [
+								{
+									"id": 170,
+									"name": "name",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 171,
+					"name": "clearMethods",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "EV.ts",
+							"line": 42,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 172,
+							"name": "clearMethods",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "EV.ts",
+									"line": 42,
+									"character": 2
+								}
+							],
+							"parameters": [
+								{
+									"id": 173,
+									"name": "methods",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isRest": true
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "any"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 188,
+					"name": "emit",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "EV.ts",
+							"line": 67,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 189,
+							"name": "emit",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "EV.ts",
+									"line": 67,
+									"character": 2
+								}
+							],
+							"parameters": [
+								{
+									"id": 190,
+									"name": "name",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 191,
+									"name": "args",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isRest": true
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "any"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 183,
+					"name": "emitonly",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "EV.ts",
+							"line": 61,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 184,
+							"name": "emitonly",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "EV.ts",
+									"line": 61,
+									"character": 2
+								}
+							],
+							"parameters": [
+								{
+									"id": 185,
+									"name": "name",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 186,
+									"name": "cb",
 									"variant": "param",
 									"kind": 32768,
 									"flags": {},
@@ -2889,243 +3328,7 @@
 					]
 				},
 				{
-					"id": 158,
-					"name": "clear",
-					"variant": "declaration",
-					"kind": 2048,
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "EV.ts",
-							"line": 35,
-							"character": 2
-						}
-					],
-					"signatures": [
-						{
-							"id": 159,
-							"name": "clear",
-							"variant": "signature",
-							"kind": 4096,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "EV.ts",
-									"line": 35,
-									"character": 2
-								}
-							],
-							"parameters": [
-								{
-									"id": 160,
-									"name": "name",
-									"variant": "param",
-									"kind": 32768,
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 161,
-					"name": "clearMethods",
-					"variant": "declaration",
-					"kind": 2048,
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "EV.ts",
-							"line": 42,
-							"character": 2
-						}
-					],
-					"signatures": [
-						{
-							"id": 162,
-							"name": "clearMethods",
-							"variant": "signature",
-							"kind": 4096,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "EV.ts",
-									"line": 42,
-									"character": 2
-								}
-							],
-							"parameters": [
-								{
-									"id": 163,
-									"name": "methods",
-									"variant": "param",
-									"kind": 32768,
-									"flags": {
-										"isRest": true
-									},
-									"type": {
-										"type": "array",
-										"elementType": {
-											"type": "intrinsic",
-											"name": "any"
-										}
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 178,
-					"name": "emit",
-					"variant": "declaration",
-					"kind": 2048,
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "EV.ts",
-							"line": 67,
-							"character": 2
-						}
-					],
-					"signatures": [
-						{
-							"id": 179,
-							"name": "emit",
-							"variant": "signature",
-							"kind": 4096,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "EV.ts",
-									"line": 67,
-									"character": 2
-								}
-							],
-							"parameters": [
-								{
-									"id": 180,
-									"name": "name",
-									"variant": "param",
-									"kind": 32768,
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								},
-								{
-									"id": 181,
-									"name": "args",
-									"variant": "param",
-									"kind": 32768,
-									"flags": {
-										"isRest": true
-									},
-									"type": {
-										"type": "array",
-										"elementType": {
-											"type": "intrinsic",
-											"name": "any"
-										}
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 173,
-					"name": "emitonly",
-					"variant": "declaration",
-					"kind": 2048,
-					"flags": {},
-					"sources": [
-						{
-							"fileName": "EV.ts",
-							"line": 61,
-							"character": 2
-						}
-					],
-					"signatures": [
-						{
-							"id": 174,
-							"name": "emitonly",
-							"variant": "signature",
-							"kind": 4096,
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "EV.ts",
-									"line": 61,
-									"character": 2
-								}
-							],
-							"parameters": [
-								{
-									"id": 175,
-									"name": "name",
-									"variant": "param",
-									"kind": 32768,
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								},
-								{
-									"id": 176,
-									"name": "cb",
-									"variant": "param",
-									"kind": 32768,
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								},
-								{
-									"id": 177,
-									"name": "args",
-									"variant": "param",
-									"kind": 32768,
-									"flags": {
-										"isRest": true
-									},
-									"type": {
-										"type": "array",
-										"elementType": {
-											"type": "intrinsic",
-											"name": "any"
-										}
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					]
-				},
-				{
-					"id": 136,
+					"id": 146,
 					"name": "init",
 					"variant": "declaration",
 					"kind": 2048,
@@ -3139,7 +3342,7 @@
 					],
 					"signatures": [
 						{
-							"id": 137,
+							"id": 147,
 							"name": "init",
 							"variant": "signature",
 							"kind": 4096,
@@ -3159,7 +3362,7 @@
 					]
 				},
 				{
-					"id": 169,
+					"id": 179,
 					"name": "off",
 					"variant": "declaration",
 					"kind": 2048,
@@ -3173,7 +3376,7 @@
 					],
 					"signatures": [
 						{
-							"id": 170,
+							"id": 180,
 							"name": "off",
 							"variant": "signature",
 							"kind": 4096,
@@ -3187,7 +3390,7 @@
 							],
 							"parameters": [
 								{
-									"id": 171,
+									"id": 181,
 									"name": "name",
 									"variant": "param",
 									"kind": 32768,
@@ -3198,7 +3401,7 @@
 									}
 								},
 								{
-									"id": 172,
+									"id": 182,
 									"name": "cb",
 									"variant": "param",
 									"kind": 32768,
@@ -3217,7 +3420,7 @@
 					]
 				},
 				{
-					"id": 138,
+					"id": 148,
 					"name": "on",
 					"variant": "declaration",
 					"kind": 2048,
@@ -3231,7 +3434,7 @@
 					],
 					"signatures": [
 						{
-							"id": 139,
+							"id": 149,
 							"name": "on",
 							"variant": "signature",
 							"kind": 4096,
@@ -3245,7 +3448,7 @@
 							],
 							"parameters": [
 								{
-									"id": 140,
+									"id": 150,
 									"name": "name",
 									"variant": "param",
 									"kind": 32768,
@@ -3256,7 +3459,7 @@
 									}
 								},
 								{
-									"id": 141,
+									"id": 151,
 									"name": "cb",
 									"variant": "param",
 									"kind": 32768,
@@ -3264,7 +3467,7 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 142,
+											"id": 152,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -3278,7 +3481,7 @@
 											],
 											"signatures": [
 												{
-													"id": 143,
+													"id": 153,
 													"name": "__type",
 													"variant": "signature",
 													"kind": 4096,
@@ -3292,7 +3495,7 @@
 													],
 													"parameters": [
 														{
-															"id": 144,
+															"id": 154,
 															"name": "args",
 															"variant": "param",
 															"kind": 32768,
@@ -3318,7 +3521,7 @@
 									}
 								},
 								{
-									"id": 145,
+									"id": 155,
 									"name": "z",
 									"variant": "param",
 									"kind": 32768,
@@ -3330,7 +3533,7 @@
 									"defaultValue": "1"
 								},
 								{
-									"id": 146,
+									"id": 156,
 									"name": "once",
 									"variant": "param",
 									"kind": 32768,
@@ -3350,7 +3553,7 @@
 					]
 				},
 				{
-					"id": 164,
+					"id": 174,
 					"name": "once",
 					"variant": "declaration",
 					"kind": 2048,
@@ -3364,7 +3567,7 @@
 					],
 					"signatures": [
 						{
-							"id": 165,
+							"id": 175,
 							"name": "once",
 							"variant": "signature",
 							"kind": 4096,
@@ -3378,7 +3581,7 @@
 							],
 							"parameters": [
 								{
-									"id": 166,
+									"id": 176,
 									"name": "name",
 									"variant": "param",
 									"kind": 32768,
@@ -3389,7 +3592,7 @@
 									}
 								},
 								{
-									"id": 167,
+									"id": 177,
 									"name": "cb",
 									"variant": "param",
 									"kind": 32768,
@@ -3400,7 +3603,7 @@
 									}
 								},
 								{
-									"id": 168,
+									"id": 178,
 									"name": "z",
 									"variant": "param",
 									"kind": 32768,
@@ -3420,7 +3623,7 @@
 					]
 				},
 				{
-					"id": 147,
+					"id": 157,
 					"name": "sort",
 					"variant": "declaration",
 					"kind": 2048,
@@ -3434,7 +3637,7 @@
 					],
 					"signatures": [
 						{
-							"id": 148,
+							"id": 158,
 							"name": "sort",
 							"variant": "signature",
 							"kind": 4096,
@@ -3448,7 +3651,7 @@
 							],
 							"parameters": [
 								{
-									"id": 149,
+									"id": 159,
 									"name": "list",
 									"variant": "param",
 									"kind": 32768,
@@ -3474,14 +3677,14 @@
 											{
 												"type": "reflection",
 												"declaration": {
-													"id": 150,
+													"id": 160,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
 													"flags": {},
 													"children": [
 														{
-															"id": 153,
+															"id": 163,
 															"name": "once",
 															"variant": "declaration",
 															"kind": 1024,
@@ -3499,7 +3702,7 @@
 															}
 														},
 														{
-															"id": 152,
+															"id": 162,
 															"name": "size",
 															"variant": "declaration",
 															"kind": 1024,
@@ -3517,7 +3720,7 @@
 															}
 														},
 														{
-															"id": 151,
+															"id": 161,
 															"name": "z",
 															"variant": "declaration",
 															"kind": 1024,
@@ -3539,9 +3742,9 @@
 														{
 															"title": "Properties",
 															"children": [
-																153,
-																152,
-																151
+																163,
+																162,
+																161
 															]
 														}
 													],
@@ -3581,14 +3784,14 @@
 									{
 										"type": "reflection",
 										"declaration": {
-											"id": 154,
+											"id": 164,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 157,
+													"id": 167,
 													"name": "once",
 													"variant": "declaration",
 													"kind": 1024,
@@ -3606,7 +3809,7 @@
 													}
 												},
 												{
-													"id": 156,
+													"id": 166,
 													"name": "size",
 													"variant": "declaration",
 													"kind": 1024,
@@ -3624,7 +3827,7 @@
 													}
 												},
 												{
-													"id": 155,
+													"id": 165,
 													"name": "z",
 													"variant": "declaration",
 													"kind": 1024,
@@ -3646,9 +3849,9 @@
 												{
 													"title": "Properties",
 													"children": [
-														157,
-														156,
-														155
+														167,
+														166,
+														165
 													]
 												}
 											],
@@ -3673,28 +3876,28 @@
 				{
 					"title": "Constructors",
 					"children": [
-						129
+						139
 					]
 				},
 				{
 					"title": "Properties",
 					"children": [
-						131
+						141
 					]
 				},
 				{
 					"title": "Methods",
 					"children": [
-						182,
-						158,
-						161,
-						178,
-						173,
-						136,
-						169,
-						138,
-						164,
-						147
+						192,
+						168,
+						171,
+						188,
+						183,
+						146,
+						179,
+						148,
+						174,
+						157
 					]
 				}
 			],
@@ -3707,124 +3910,60 @@
 			]
 		},
 		{
-			"id": 188,
-			"name": "SizeFlag",
+			"id": 232,
+			"name": "PIXIfeatureComponent",
 			"variant": "declaration",
 			"kind": 128,
 			"flags": {},
 			"children": [
 				{
-					"id": 194,
+					"id": 233,
 					"name": "constructor",
 					"variant": "declaration",
 					"kind": 512,
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "SizeFlag.ts",
-							"line": 10,
+							"fileName": "Component.ts",
+							"line": 34,
 							"character": 2
 						}
 					],
 					"signatures": [
 						{
-							"id": 195,
-							"name": "SizeFlag",
+							"id": 234,
+							"name": "PIXIfeatureComponent",
 							"variant": "signature",
 							"kind": 16384,
 							"flags": {},
 							"sources": [
 								{
-									"fileName": "SizeFlag.ts",
-									"line": 10,
+									"fileName": "Component.ts",
+									"line": 34,
 									"character": 2
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": 188,
-								"name": "SizeFlag",
-								"package": "rmmz-game"
+								"target": 232,
+								"name": "PIXIfeatureComponent"
 							},
-							"overwrites": {
+							"inheritedFrom": {
 								"type": "reference",
-								"target": -1,
-								"name": "PIXIfeatureComponent.constructor"
+								"target": 114,
+								"name": "Component.constructor"
 							}
 						}
 					],
-					"overwrites": {
+					"inheritedFrom": {
 						"type": "reference",
-						"target": -1,
-						"name": "PIXIfeatureComponent.constructor"
+						"target": 113,
+						"name": "Component.constructor"
 					}
 				},
 				{
-					"id": 202,
+					"id": 237,
 					"name": "_enable",
-					"variant": "declaration",
-					"kind": 1024,
-					"flags": {
-						"isInherited": true
-					},
-					"sources": [
-						{
-							"fileName": "Component.ts",
-							"line": 6,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "reference",
-						"target": {
-							"packageName": "typescript",
-							"packagePath": "lib/lib.es5.d.ts",
-							"qualifiedName": "Boolean"
-						},
-						"name": "Boolean",
-						"package": "typescript"
-					},
-					"defaultValue": "true",
-					"inheritedFrom": {
-						"type": "reference",
-						"target": -1,
-						"name": "PIXIfeatureComponent._enable"
-					}
-				},
-				{
-					"id": 201,
-					"name": "_gameObject",
-					"variant": "declaration",
-					"kind": 1024,
-					"flags": {
-						"isInherited": true
-					},
-					"sources": [
-						{
-							"fileName": "Component.ts",
-							"line": 5,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "reference",
-						"target": {
-							"packageName": "rmmz-game",
-							"packagePath": "js/GameObject/GameObject.ts",
-							"qualifiedName": "GameObject"
-						},
-						"name": "GameObject",
-						"package": "rmmz-game"
-					},
-					"inheritedFrom": {
-						"type": "reference",
-						"target": -1,
-						"name": "PIXIfeatureComponent._gameObject"
-					}
-				},
-				{
-					"id": 203,
-					"name": "_start",
 					"variant": "declaration",
 					"kind": 1024,
 					"flags": {
@@ -3847,15 +3986,796 @@
 						"name": "Boolean",
 						"package": "typescript"
 					},
+					"defaultValue": "true",
+					"inheritedFrom": {
+						"type": "reference",
+						"target": 116,
+						"name": "Component._enable"
+					}
+				},
+				{
+					"id": 236,
+					"name": "_gameObject",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isInherited": true
+					},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 6,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"packageName": "<unknown>",
+							"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/GameObject.ts",
+							"qualifiedName": "GameObject"
+						},
+						"name": "GameObject"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": 115,
+						"name": "Component._gameObject"
+					}
+				},
+				{
+					"id": 238,
+					"name": "_start",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isInherited": true
+					},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 8,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"packageName": "typescript",
+							"packagePath": "lib/lib.es5.d.ts",
+							"qualifiedName": "Boolean"
+						},
+						"name": "Boolean",
+						"package": "typescript"
+					},
 					"defaultValue": "false",
 					"inheritedFrom": {
 						"type": "reference",
-						"target": -1,
+						"target": 117,
+						"name": "Component._start"
+					}
+				},
+				{
+					"id": 235,
+					"name": "container",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 42,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"packageName": "<unknown>",
+							"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Types.ts",
+							"qualifiedName": "PIXI.Container"
+						},
+						"name": "Container",
+						"qualifiedName": "PIXI.Container"
+					}
+				},
+				{
+					"id": 239,
+					"name": "_destroy",
+					"variant": "declaration",
+					"kind": 262144,
+					"flags": {
+						"isInherited": true
+					},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 9,
+							"character": 6
+						}
+					],
+					"getSignature": {
+						"id": 240,
+						"name": "_destroy",
+						"variant": "signature",
+						"kind": 524288,
+						"flags": {
+							"isInherited": true
+						},
+						"sources": [
+							{
+								"fileName": "Component.ts",
+								"line": 9,
+								"character": 6
+							}
+						],
+						"type": {
+							"type": "intrinsic",
+							"name": "boolean"
+						},
+						"inheritedFrom": {
+							"type": "reference",
+							"target": -1,
+							"name": "Component._destroy"
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": 118,
+						"name": "Component._destroy"
+					}
+				},
+				{
+					"id": 241,
+					"name": "enable",
+					"variant": "declaration",
+					"kind": 262144,
+					"flags": {
+						"isInherited": true
+					},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 12,
+							"character": 6
+						},
+						{
+							"fileName": "Component.ts",
+							"line": 15,
+							"character": 6
+						}
+					],
+					"getSignature": {
+						"id": 242,
+						"name": "enable",
+						"variant": "signature",
+						"kind": 524288,
+						"flags": {
+							"isInherited": true
+						},
+						"sources": [
+							{
+								"fileName": "Component.ts",
+								"line": 12,
+								"character": 6
+							}
+						],
+						"type": {
+							"type": "reference",
+							"target": {
+								"packageName": "typescript",
+								"packagePath": "lib/lib.es5.d.ts",
+								"qualifiedName": "Boolean"
+							},
+							"name": "Boolean",
+							"package": "typescript"
+						},
+						"inheritedFrom": {
+							"type": "reference",
+							"target": -1,
+							"name": "Component.enable"
+						}
+					},
+					"setSignature": {
+						"id": 243,
+						"name": "enable",
+						"variant": "signature",
+						"kind": 1048576,
+						"flags": {
+							"isInherited": true
+						},
+						"sources": [
+							{
+								"fileName": "Component.ts",
+								"line": 15,
+								"character": 6
+							}
+						],
+						"parameters": [
+							{
+								"id": 244,
+								"name": "b",
+								"variant": "param",
+								"kind": 32768,
+								"flags": {},
+								"type": {
+									"type": "reference",
+									"target": {
+										"packageName": "typescript",
+										"packagePath": "lib/lib.es5.d.ts",
+										"qualifiedName": "Boolean"
+									},
+									"name": "Boolean",
+									"package": "typescript"
+								}
+							}
+						],
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"inheritedFrom": {
+							"type": "reference",
+							"target": -1,
+							"name": "Component.enable"
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": 120,
+						"name": "Component.enable"
+					}
+				},
+				{
+					"id": 245,
+					"name": "gameObject",
+					"variant": "declaration",
+					"kind": 262144,
+					"flags": {
+						"isInherited": true
+					},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 27,
+							"character": 6
+						},
+						{
+							"fileName": "Component.ts",
+							"line": 30,
+							"character": 6
+						}
+					],
+					"getSignature": {
+						"id": 246,
+						"name": "gameObject",
+						"variant": "signature",
+						"kind": 524288,
+						"flags": {
+							"isInherited": true
+						},
+						"sources": [
+							{
+								"fileName": "Component.ts",
+								"line": 27,
+								"character": 6
+							}
+						],
+						"type": {
+							"type": "reference",
+							"target": {
+								"packageName": "<unknown>",
+								"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/GameObject.ts",
+								"qualifiedName": "GameObject"
+							},
+							"name": "GameObject"
+						},
+						"inheritedFrom": {
+							"type": "reference",
+							"target": -1,
+							"name": "Component.gameObject"
+						}
+					},
+					"setSignature": {
+						"id": 247,
+						"name": "gameObject",
+						"variant": "signature",
+						"kind": 1048576,
+						"flags": {
+							"isInherited": true
+						},
+						"sources": [
+							{
+								"fileName": "Component.ts",
+								"line": 30,
+								"character": 6
+							}
+						],
+						"parameters": [
+							{
+								"id": 248,
+								"name": "g",
+								"variant": "param",
+								"kind": 32768,
+								"flags": {},
+								"type": {
+									"type": "reference",
+									"target": {
+										"packageName": "<unknown>",
+										"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/GameObject.ts",
+										"qualifiedName": "GameObject"
+									},
+									"name": "GameObject"
+								}
+							}
+						],
+						"type": {
+							"type": "intrinsic",
+							"name": "void"
+						},
+						"inheritedFrom": {
+							"type": "reference",
+							"target": -1,
+							"name": "Component.gameObject"
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": 124,
+						"name": "Component.gameObject"
+					}
+				},
+				{
+					"id": 257,
+					"name": "_Destroy",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isInherited": true
+					},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 39,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 258,
+							"name": "_Destroy",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "Component.ts",
+									"line": 39,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 137,
+								"name": "Component._Destroy"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": 136,
+						"name": "Component._Destroy"
+					}
+				},
+				{
+					"id": 249,
+					"name": "_GameObjectUpdate",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isInherited": true
+					},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 35,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 250,
+							"name": "_GameObjectUpdate",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "Component.ts",
+									"line": 35,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 129,
+								"name": "Component._GameObjectUpdate"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": 128,
+						"name": "Component._GameObjectUpdate"
+					}
+				},
+				{
+					"id": 251,
+					"name": "Awake",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isInherited": true
+					},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 36,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 252,
+							"name": "Awake",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "Component.ts",
+									"line": 36,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 131,
+								"name": "Component.Awake"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": 130,
+						"name": "Component.Awake"
+					}
+				},
+				{
+					"id": 253,
+					"name": "Start",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isInherited": true
+					},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 37,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 254,
+							"name": "Start",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "Component.ts",
+									"line": 37,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 133,
+								"name": "Component.Start"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": 132,
+						"name": "Component.Start"
+					}
+				},
+				{
+					"id": 255,
+					"name": "Update",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isInherited": true
+					},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 38,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 256,
+							"name": "Update",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "Component.ts",
+									"line": 38,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 135,
+								"name": "Component.Update"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": 134,
+						"name": "Component.Update"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						233
+					]
+				},
+				{
+					"title": "Properties",
+					"children": [
+						237,
+						236,
+						238,
+						235
+					]
+				},
+				{
+					"title": "Accessors",
+					"children": [
+						239,
+						241,
+						245
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						257,
+						249,
+						251,
+						253,
+						255
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "Component.ts",
+					"line": 41,
+					"character": 13
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": 112,
+					"name": "Component"
+				}
+			],
+			"extendedBy": [
+				{
+					"type": "reference",
+					"target": 30,
+					"name": "Layout"
+				},
+				{
+					"type": "reference",
+					"target": 198,
+					"name": "SizeFlag"
+				}
+			]
+		},
+		{
+			"id": 198,
+			"name": "SizeFlag",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"children": [
+				{
+					"id": 204,
+					"name": "constructor",
+					"variant": "declaration",
+					"kind": 512,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "SizeFlag.ts",
+							"line": 10,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 205,
+							"name": "SizeFlag",
+							"variant": "signature",
+							"kind": 16384,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "SizeFlag.ts",
+									"line": 10,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 198,
+								"name": "SizeFlag"
+							},
+							"overwrites": {
+								"type": "reference",
+								"target": 234,
+								"name": "PIXIfeatureComponent.constructor"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"target": 233,
+						"name": "PIXIfeatureComponent.constructor"
+					}
+				},
+				{
+					"id": 212,
+					"name": "_enable",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isInherited": true
+					},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 7,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"packageName": "typescript",
+							"packagePath": "lib/lib.es5.d.ts",
+							"qualifiedName": "Boolean"
+						},
+						"name": "Boolean",
+						"package": "typescript"
+					},
+					"defaultValue": "true",
+					"inheritedFrom": {
+						"type": "reference",
+						"target": 237,
+						"name": "PIXIfeatureComponent._enable"
+					}
+				},
+				{
+					"id": 211,
+					"name": "_gameObject",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isInherited": true
+					},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 6,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"packageName": "<unknown>",
+							"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/GameObject.ts",
+							"qualifiedName": "GameObject"
+						},
+						"name": "GameObject"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": 236,
+						"name": "PIXIfeatureComponent._gameObject"
+					}
+				},
+				{
+					"id": 213,
+					"name": "_start",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isInherited": true
+					},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 8,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"packageName": "typescript",
+							"packagePath": "lib/lib.es5.d.ts",
+							"qualifiedName": "Boolean"
+						},
+						"name": "Boolean",
+						"package": "typescript"
+					},
+					"defaultValue": "false",
+					"inheritedFrom": {
+						"type": "reference",
+						"target": 238,
 						"name": "PIXIfeatureComponent._start"
 					}
 				},
 				{
-					"id": 200,
+					"id": 210,
 					"name": "container",
 					"variant": "declaration",
 					"kind": 1024,
@@ -3865,29 +4785,28 @@
 					"sources": [
 						{
 							"fileName": "Component.ts",
-							"line": 41,
+							"line": 42,
 							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
 						"target": {
-							"packageName": "rmmz-game",
-							"packagePath": "js/GameObject/Types.ts",
+							"packageName": "<unknown>",
+							"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Types.ts",
 							"qualifiedName": "PIXI.Container"
 						},
 						"name": "Container",
-						"package": "rmmz-game",
 						"qualifiedName": "PIXI.Container"
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"target": -1,
+						"target": 235,
 						"name": "PIXIfeatureComponent.container"
 					}
 				},
 				{
-					"id": 196,
+					"id": 206,
 					"name": "left",
 					"variant": "declaration",
 					"kind": 1024,
@@ -3906,7 +4825,7 @@
 					"defaultValue": "0.5"
 				},
 				{
-					"id": 197,
+					"id": 207,
 					"name": "up",
 					"variant": "declaration",
 					"kind": 1024,
@@ -3925,7 +4844,7 @@
 					"defaultValue": "0.5"
 				},
 				{
-					"id": 190,
+					"id": 200,
 					"name": "_init",
 					"variant": "declaration",
 					"kind": 1024,
@@ -3946,7 +4865,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 189,
+					"id": 199,
 					"name": "sizes",
 					"variant": "declaration",
 					"kind": 1024,
@@ -3983,7 +4902,7 @@
 					"defaultValue": "..."
 				},
 				{
-					"id": 204,
+					"id": 214,
 					"name": "_destroy",
 					"variant": "declaration",
 					"kind": 262144,
@@ -3993,12 +4912,12 @@
 					"sources": [
 						{
 							"fileName": "Component.ts",
-							"line": 8,
+							"line": 9,
 							"character": 6
 						}
 					],
 					"getSignature": {
-						"id": 205,
+						"id": 215,
 						"name": "_destroy",
 						"variant": "signature",
 						"kind": 524288,
@@ -4008,7 +4927,7 @@
 						"sources": [
 							{
 								"fileName": "Component.ts",
-								"line": 8,
+								"line": 9,
 								"character": 6
 							}
 						],
@@ -4024,12 +4943,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"target": -1,
+						"target": 239,
 						"name": "PIXIfeatureComponent._destroy"
 					}
 				},
 				{
-					"id": 206,
+					"id": 216,
 					"name": "enable",
 					"variant": "declaration",
 					"kind": 262144,
@@ -4039,17 +4958,17 @@
 					"sources": [
 						{
 							"fileName": "Component.ts",
-							"line": 11,
+							"line": 12,
 							"character": 6
 						},
 						{
 							"fileName": "Component.ts",
-							"line": 14,
+							"line": 15,
 							"character": 6
 						}
 					],
 					"getSignature": {
-						"id": 207,
+						"id": 217,
 						"name": "enable",
 						"variant": "signature",
 						"kind": 524288,
@@ -4059,7 +4978,7 @@
 						"sources": [
 							{
 								"fileName": "Component.ts",
-								"line": 11,
+								"line": 12,
 								"character": 6
 							}
 						],
@@ -4080,7 +4999,7 @@
 						}
 					},
 					"setSignature": {
-						"id": 208,
+						"id": 218,
 						"name": "enable",
 						"variant": "signature",
 						"kind": 1048576,
@@ -4090,13 +5009,13 @@
 						"sources": [
 							{
 								"fileName": "Component.ts",
-								"line": 14,
+								"line": 15,
 								"character": 6
 							}
 						],
 						"parameters": [
 							{
-								"id": 209,
+								"id": 219,
 								"name": "b",
 								"variant": "param",
 								"kind": 32768,
@@ -4125,12 +5044,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"target": -1,
+						"target": 241,
 						"name": "PIXIfeatureComponent.enable"
 					}
 				},
 				{
-					"id": 210,
+					"id": 220,
 					"name": "gameObject",
 					"variant": "declaration",
 					"kind": 262144,
@@ -4140,17 +5059,17 @@
 					"sources": [
 						{
 							"fileName": "Component.ts",
-							"line": 26,
+							"line": 27,
 							"character": 6
 						},
 						{
 							"fileName": "Component.ts",
-							"line": 29,
+							"line": 30,
 							"character": 6
 						}
 					],
 					"getSignature": {
-						"id": 211,
+						"id": 221,
 						"name": "gameObject",
 						"variant": "signature",
 						"kind": 524288,
@@ -4160,19 +5079,18 @@
 						"sources": [
 							{
 								"fileName": "Component.ts",
-								"line": 26,
+								"line": 27,
 								"character": 6
 							}
 						],
 						"type": {
 							"type": "reference",
 							"target": {
-								"packageName": "rmmz-game",
-								"packagePath": "js/GameObject/GameObject.ts",
+								"packageName": "<unknown>",
+								"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/GameObject.ts",
 								"qualifiedName": "GameObject"
 							},
-							"name": "GameObject",
-							"package": "rmmz-game"
+							"name": "GameObject"
 						},
 						"inheritedFrom": {
 							"type": "reference",
@@ -4181,7 +5099,7 @@
 						}
 					},
 					"setSignature": {
-						"id": 212,
+						"id": 222,
 						"name": "gameObject",
 						"variant": "signature",
 						"kind": 1048576,
@@ -4191,13 +5109,13 @@
 						"sources": [
 							{
 								"fileName": "Component.ts",
-								"line": 29,
+								"line": 30,
 								"character": 6
 							}
 						],
 						"parameters": [
 							{
-								"id": 213,
+								"id": 223,
 								"name": "g",
 								"variant": "param",
 								"kind": 32768,
@@ -4205,12 +5123,11 @@
 								"type": {
 									"type": "reference",
 									"target": {
-										"packageName": "rmmz-game",
-										"packagePath": "js/GameObject/GameObject.ts",
+										"packageName": "<unknown>",
+										"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/GameObject.ts",
 										"qualifiedName": "GameObject"
 									},
-									"name": "GameObject",
-									"package": "rmmz-game"
+									"name": "GameObject"
 								}
 							}
 						],
@@ -4226,12 +5143,12 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"target": -1,
+						"target": 245,
 						"name": "PIXIfeatureComponent.gameObject"
 					}
 				},
 				{
-					"id": 220,
+					"id": 230,
 					"name": "_Destroy",
 					"variant": "declaration",
 					"kind": 2048,
@@ -4241,13 +5158,13 @@
 					"sources": [
 						{
 							"fileName": "Component.ts",
-							"line": 38,
+							"line": 39,
 							"character": 2
 						}
 					],
 					"signatures": [
 						{
-							"id": 221,
+							"id": 231,
 							"name": "_Destroy",
 							"variant": "signature",
 							"kind": 4096,
@@ -4257,7 +5174,7 @@
 							"sources": [
 								{
 									"fileName": "Component.ts",
-									"line": 38,
+									"line": 39,
 									"character": 2
 								}
 							],
@@ -4267,68 +5184,20 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": -1,
+								"target": 258,
 								"name": "PIXIfeatureComponent._Destroy"
 							}
 						}
 					],
 					"inheritedFrom": {
 						"type": "reference",
-						"target": -1,
+						"target": 257,
 						"name": "PIXIfeatureComponent._Destroy"
 					}
 				},
 				{
-					"id": 214,
+					"id": 224,
 					"name": "_GameObjectUpdate",
-					"variant": "declaration",
-					"kind": 2048,
-					"flags": {
-						"isInherited": true
-					},
-					"sources": [
-						{
-							"fileName": "Component.ts",
-							"line": 34,
-							"character": 2
-						}
-					],
-					"signatures": [
-						{
-							"id": 215,
-							"name": "_GameObjectUpdate",
-							"variant": "signature",
-							"kind": 4096,
-							"flags": {
-								"isInherited": true
-							},
-							"sources": [
-								{
-									"fileName": "Component.ts",
-									"line": 34,
-									"character": 2
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							},
-							"inheritedFrom": {
-								"type": "reference",
-								"target": -1,
-								"name": "PIXIfeatureComponent._GameObjectUpdate"
-							}
-						}
-					],
-					"inheritedFrom": {
-						"type": "reference",
-						"target": -1,
-						"name": "PIXIfeatureComponent._GameObjectUpdate"
-					}
-				},
-				{
-					"id": 216,
-					"name": "Awake",
 					"variant": "declaration",
 					"kind": 2048,
 					"flags": {
@@ -4343,8 +5212,8 @@
 					],
 					"signatures": [
 						{
-							"id": 217,
-							"name": "Awake",
+							"id": 225,
+							"name": "_GameObjectUpdate",
 							"variant": "signature",
 							"kind": 4096,
 							"flags": {
@@ -4363,20 +5232,20 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": -1,
-								"name": "PIXIfeatureComponent.Awake"
+								"target": 250,
+								"name": "PIXIfeatureComponent._GameObjectUpdate"
 							}
 						}
 					],
 					"inheritedFrom": {
 						"type": "reference",
-						"target": -1,
-						"name": "PIXIfeatureComponent.Awake"
+						"target": 249,
+						"name": "PIXIfeatureComponent._GameObjectUpdate"
 					}
 				},
 				{
-					"id": 218,
-					"name": "Start",
+					"id": 226,
+					"name": "Awake",
 					"variant": "declaration",
 					"kind": 2048,
 					"flags": {
@@ -4391,8 +5260,8 @@
 					],
 					"signatures": [
 						{
-							"id": 219,
-							"name": "Start",
+							"id": 227,
+							"name": "Awake",
 							"variant": "signature",
 							"kind": 4096,
 							"flags": {
@@ -4411,19 +5280,67 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"target": -1,
+								"target": 252,
+								"name": "PIXIfeatureComponent.Awake"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": 251,
+						"name": "PIXIfeatureComponent.Awake"
+					}
+				},
+				{
+					"id": 228,
+					"name": "Start",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isInherited": true
+					},
+					"sources": [
+						{
+							"fileName": "Component.ts",
+							"line": 37,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 229,
+							"name": "Start",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "Component.ts",
+									"line": 37,
+									"character": 2
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 254,
 								"name": "PIXIfeatureComponent.Start"
 							}
 						}
 					],
 					"inheritedFrom": {
 						"type": "reference",
-						"target": -1,
+						"target": 253,
 						"name": "PIXIfeatureComponent.Start"
 					}
 				},
 				{
-					"id": 198,
+					"id": 208,
 					"name": "Update",
 					"variant": "declaration",
 					"kind": 2048,
@@ -4437,7 +5354,7 @@
 					],
 					"signatures": [
 						{
-							"id": 199,
+							"id": 209,
 							"name": "Update",
 							"variant": "signature",
 							"kind": 4096,
@@ -4455,19 +5372,19 @@
 							},
 							"overwrites": {
 								"type": "reference",
-								"target": -1,
+								"target": 256,
 								"name": "PIXIfeatureComponent.Update"
 							}
 						}
 					],
 					"overwrites": {
 						"type": "reference",
-						"target": -1,
+						"target": 255,
 						"name": "PIXIfeatureComponent.Update"
 					}
 				},
 				{
-					"id": 191,
+					"id": 201,
 					"name": "GetDisplayObjectSize",
 					"variant": "declaration",
 					"kind": 2048,
@@ -4483,7 +5400,7 @@
 					],
 					"signatures": [
 						{
-							"id": 192,
+							"id": 202,
 							"name": "GetDisplayObjectSize",
 							"variant": "signature",
 							"kind": 4096,
@@ -4497,7 +5414,7 @@
 							],
 							"parameters": [
 								{
-									"id": 193,
+									"id": 203,
 									"name": "target",
 									"variant": "param",
 									"kind": 32768,
@@ -4520,39 +5437,39 @@
 				{
 					"title": "Constructors",
 					"children": [
-						194
+						204
 					]
 				},
 				{
 					"title": "Properties",
 					"children": [
-						202,
-						201,
-						203,
+						212,
+						211,
+						213,
+						210,
+						206,
+						207,
 						200,
-						196,
-						197,
-						190,
-						189
+						199
 					]
 				},
 				{
 					"title": "Accessors",
 					"children": [
-						204,
-						206,
-						210
+						214,
+						216,
+						220
 					]
 				},
 				{
 					"title": "Methods",
 					"children": [
-						220,
-						214,
-						216,
-						218,
-						198,
-						191
+						230,
+						224,
+						226,
+						228,
+						208,
+						201
 					]
 				}
 			],
@@ -4566,13 +5483,8 @@
 			"extendedTypes": [
 				{
 					"type": "reference",
-					"target": {
-						"packageName": "rmmz-game",
-						"packagePath": "js/GameObject/Component.ts",
-						"qualifiedName": "PIXIfeatureComponent"
-					},
-					"name": "PIXIfeatureComponent",
-					"package": "rmmz-game"
+					"target": 232,
+					"name": "PIXIfeatureComponent"
 				}
 			]
 		}
@@ -4587,1122 +5499,1287 @@
 		{
 			"title": "Classes",
 			"children": [
-				102,
-				128,
-				188
+				112,
+				138,
+				232,
+				198
 			]
 		}
 	],
-	"packageName": "rmmz-game",
 	"symbolIdMap": {
 		"0": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/index.ts",
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/index.ts",
 			"qualifiedName": ""
 		},
 		"1": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
 			"qualifiedName": ""
 		},
 		"2": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Vec2"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "temp"
 		},
 		"3": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Vec2.__constructor"
-		},
-		"4": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Vec2"
-		},
-		"5": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "x"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "temp.T"
 		},
 		"6": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "y"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "A"
 		},
 		"7": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Vec2._x"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "A.tt"
 		},
 		"8": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Vec2._y"
-		},
-		"9": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Vec2.x"
-		},
-		"10": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Vec2.x"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "B"
 		},
 		"11": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Vec2.y"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "B.tt"
 		},
 		"12": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Vec2.y"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Vec2"
 		},
 		"13": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Vec2.width"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Vec2.__constructor"
 		},
 		"14": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Vec2.width"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Vec2"
 		},
 		"15": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Vec2.height"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "x"
 		},
 		"16": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Vec2.height"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "y"
 		},
 		"17": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "dirs"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Vec2._x"
 		},
 		"18": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "dirs.Horizontal"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Vec2._y"
 		},
 		"19": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "dirs.Vertical"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Vec2.x"
 		},
 		"20": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Vec2.x"
 		},
 		"21": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.maskArea"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Vec2.y"
 		},
 		"22": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._init"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Vec2.y"
 		},
 		"23": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.__constructor"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Vec2.width"
 		},
 		"24": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Vec2.width"
 		},
 		"25": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.ev"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Vec2.height"
 		},
 		"26": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._dir"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Vec2.height"
 		},
 		"27": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._needLayout"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "dirs"
 		},
 		"28": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.margin"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "dirs.Horizontal"
 		},
 		"29": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._padding"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "dirs.Vertical"
 		},
 		"30": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._size"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout"
 		},
 		"31": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.round"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.maskArea"
 		},
 		"32": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.maxCols"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._init"
 		},
 		"33": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.mask"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.__constructor"
 		},
 		"34": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.size"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout"
 		},
 		"35": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.size"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.ev"
 		},
 		"36": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.size"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._dir"
 		},
 		"37": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "s"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._needLayout"
 		},
 		"38": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.padding"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.maxCols"
 		},
 		"39": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.padding"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.margin"
 		},
 		"40": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.padding"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._padding"
 		},
 		"41": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "p"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._size"
 		},
 		"42": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._childpos"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.round"
 		},
 		"43": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._updateLayoutBase"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.mask"
 		},
 		"44": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._updateLayoutBase"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.size"
 		},
 		"45": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._childsize"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.size"
 		},
 		"46": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._simpleChildSize"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.size"
 		},
 		"47": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._simpleChildSize"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "s"
 		},
 		"48": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "c"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.padding"
 		},
 		"49": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "__object"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.padding"
 		},
 		"50": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "__object.width"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.padding"
 		},
 		"51": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "__object.height"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "p"
 		},
 		"52": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.OnChange"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._childpos"
 		},
 		"53": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.OnChange"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._updateLayoutBase"
 		},
 		"54": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "target"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._updateLayoutBase"
 		},
 		"55": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.Start"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._childsize"
 		},
 		"56": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.Start"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._simpleChildSize"
 		},
 		"57": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._Destroy"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._simpleChildSize"
 		},
 		"58": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._Destroy"
-		},
-		"59": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._Resize"
-		},
-		"60": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._Resize"
-		},
-		"61": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._check"
-		},
-		"62": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._check"
-		},
-		"63": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "target"
-		},
-		"64": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.SetChildPosGetter"
-		},
-		"65": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.SetChildPosGetter"
-		},
-		"66": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "fn"
-		},
-		"67": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.SetChildSizeGetter"
-		},
-		"68": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.SetChildSizeGetter"
-		},
-		"69": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "fn"
-		},
-		"70": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.Children"
-		},
-		"71": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.Children"
-		},
-		"72": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.Update"
-		},
-		"73": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.Update"
-		},
-		"74": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.UpdateLayout"
-		},
-		"75": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout.UpdateLayout"
-		},
-		"76": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._simpleChildSize"
-		},
-		"77": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._simpleChildSize"
-		},
-		"78": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
 			"qualifiedName": "c"
 		},
-		"79": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
+		"59": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
 			"qualifiedName": "__object"
 		},
-		"80": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
+		"60": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
 			"qualifiedName": "__object.width"
 		},
-		"81": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
+		"61": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
 			"qualifiedName": "__object.height"
 		},
+		"62": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.OnChange"
+		},
+		"63": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.OnChange"
+		},
+		"64": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "target"
+		},
+		"65": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.Start"
+		},
+		"66": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.Start"
+		},
+		"67": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._Destroy"
+		},
+		"68": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._Destroy"
+		},
+		"69": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._Resize"
+		},
+		"70": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._Resize"
+		},
+		"71": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._check"
+		},
+		"72": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._check"
+		},
+		"73": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "target"
+		},
+		"74": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.SetChildPosGetter"
+		},
+		"75": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.SetChildPosGetter"
+		},
+		"76": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "fn"
+		},
+		"77": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.SetChildSizeGetter"
+		},
+		"78": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.SetChildSizeGetter"
+		},
+		"79": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "fn"
+		},
+		"80": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.Children"
+		},
+		"81": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.Children"
+		},
 		"82": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._updateLayoutBase"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.Update"
 		},
 		"83": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Layout.ts",
-			"qualifiedName": "Layout._updateLayoutBase"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.Update"
 		},
 		"84": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "PIXIfeatureComponent.container"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.UpdateLayout"
 		},
 		"85": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._gameObject"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout.UpdateLayout"
 		},
 		"86": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._enable"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._simpleChildSize"
 		},
 		"87": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._start"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._simpleChildSize"
 		},
 		"88": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._destroy"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "c"
 		},
 		"89": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._destroy"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "__object"
 		},
 		"90": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.enable"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "__object.width"
 		},
 		"91": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.enable"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "__object.height"
 		},
 		"92": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.enable"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._updateLayoutBase"
 		},
 		"93": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "b"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Layout.ts",
+			"qualifiedName": "Layout._updateLayoutBase"
 		},
 		"94": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.gameObject"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "PIXIfeatureComponent.container"
 		},
 		"95": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.gameObject"
-		},
-		"96": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.gameObject"
-		},
-		"97": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "g"
-		},
-		"98": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._GameObjectUpdate"
-		},
-		"99": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._GameObjectUpdate"
-		},
-		"100": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.Awake"
-		},
-		"101": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.Awake"
-		},
-		"102": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component"
-		},
-		"103": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.__constructor"
-		},
-		"104": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component"
-		},
-		"105": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
 			"qualifiedName": "Component._gameObject"
 		},
-		"106": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
+		"96": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
 			"qualifiedName": "Component._enable"
 		},
-		"107": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
+		"97": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
 			"qualifiedName": "Component._start"
 		},
-		"108": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
+		"98": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
 			"qualifiedName": "Component._destroy"
 		},
-		"109": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
+		"99": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
 			"qualifiedName": "Component._destroy"
 		},
-		"110": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
+		"100": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
 			"qualifiedName": "Component.enable"
 		},
-		"111": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
+		"101": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
 			"qualifiedName": "Component.enable"
 		},
-		"112": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
+		"102": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
 			"qualifiedName": "Component.enable"
 		},
-		"113": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
+		"103": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
 			"qualifiedName": "b"
 		},
-		"114": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
+		"104": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
 			"qualifiedName": "Component.gameObject"
 		},
-		"115": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
+		"105": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
 			"qualifiedName": "Component.gameObject"
 		},
-		"116": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
+		"106": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
 			"qualifiedName": "Component.gameObject"
 		},
-		"117": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
+		"107": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
 			"qualifiedName": "g"
 		},
-		"118": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
+		"108": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
 			"qualifiedName": "Component._GameObjectUpdate"
+		},
+		"109": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._GameObjectUpdate"
+		},
+		"110": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Awake"
+		},
+		"111": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Awake"
+		},
+		"112": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component"
+		},
+		"113": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.__constructor"
+		},
+		"114": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component"
+		},
+		"115": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._gameObject"
+		},
+		"116": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._enable"
+		},
+		"117": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._start"
+		},
+		"118": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._destroy"
 		},
 		"119": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._GameObjectUpdate"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._destroy"
 		},
 		"120": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.Awake"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.enable"
 		},
 		"121": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.Awake"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.enable"
 		},
 		"122": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.Start"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.enable"
 		},
 		"123": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.Start"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "b"
 		},
 		"124": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.Update"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.gameObject"
 		},
 		"125": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.Update"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.gameObject"
 		},
 		"126": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._Destroy"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.gameObject"
 		},
 		"127": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._Destroy"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "g"
 		},
 		"128": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._GameObjectUpdate"
 		},
 		"129": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.__constructor"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._GameObjectUpdate"
 		},
 		"130": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Awake"
 		},
 		"131": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.events"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Awake"
 		},
 		"132": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "__type"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Start"
 		},
 		"133": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "__type.z"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Start"
 		},
 		"134": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "__type.size"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Update"
 		},
 		"135": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "__type.once"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Update"
 		},
 		"136": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.init"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._Destroy"
 		},
 		"137": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.init"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._Destroy"
 		},
 		"138": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.on"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV"
 		},
 		"139": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.on"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.__constructor"
 		},
 		"140": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "name"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV"
 		},
 		"141": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "cb"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.events"
 		},
 		"142": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
 			"qualifiedName": "__type"
 		},
 		"143": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "__type"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "__type.z"
 		},
 		"144": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "args"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "__type.size"
 		},
 		"145": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "z"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "__type.once"
 		},
 		"146": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "once"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.init"
 		},
 		"147": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.sort"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.init"
 		},
 		"148": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.sort"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.on"
 		},
 		"149": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "list"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.on"
 		},
 		"150": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "__type"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "name"
 		},
 		"151": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "__type.z"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "cb"
 		},
 		"152": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "__type.size"
-		},
-		"153": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "__type.once"
-		},
-		"154": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
 			"qualifiedName": "__type"
 		},
+		"153": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "__type"
+		},
+		"154": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "args"
+		},
 		"155": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "__type.z"
-		},
-		"156": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "__type.size"
-		},
-		"157": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "__type.once"
-		},
-		"158": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.clear"
-		},
-		"159": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.clear"
-		},
-		"160": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "name"
-		},
-		"161": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.clearMethods"
-		},
-		"162": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.clearMethods"
-		},
-		"163": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "methods"
-		},
-		"164": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.once"
-		},
-		"165": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.once"
-		},
-		"166": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "name"
-		},
-		"167": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "cb"
-		},
-		"168": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
 			"qualifiedName": "z"
 		},
-		"169": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.off"
+		"156": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "once"
 		},
-		"170": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.off"
+		"157": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.sort"
 		},
-		"171": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "name"
+		"158": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.sort"
 		},
-		"172": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "cb"
-		},
-		"173": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.emitonly"
-		},
-		"174": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.emitonly"
-		},
-		"175": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "name"
-		},
-		"176": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "cb"
-		},
-		"177": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "args"
-		},
-		"178": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.emit"
-		},
-		"179": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV.emit"
-		},
-		"180": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "name"
-		},
-		"181": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "args"
-		},
-		"182": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV._emit"
-		},
-		"183": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "EV._emit"
-		},
-		"184": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "options"
-		},
-		"185": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
-			"qualifiedName": "cb"
-		},
-		"186": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
+		"159": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
 			"qualifiedName": "list"
 		},
+		"160": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "__type"
+		},
+		"161": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "__type.z"
+		},
+		"162": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "__type.size"
+		},
+		"163": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "__type.once"
+		},
+		"164": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "__type"
+		},
+		"165": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "__type.z"
+		},
+		"166": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "__type.size"
+		},
+		"167": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "__type.once"
+		},
+		"168": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.clear"
+		},
+		"169": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.clear"
+		},
+		"170": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "name"
+		},
+		"171": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.clearMethods"
+		},
+		"172": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.clearMethods"
+		},
+		"173": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "methods"
+		},
+		"174": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.once"
+		},
+		"175": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.once"
+		},
+		"176": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "name"
+		},
+		"177": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "cb"
+		},
+		"178": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "z"
+		},
+		"179": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.off"
+		},
+		"180": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.off"
+		},
+		"181": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "name"
+		},
+		"182": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "cb"
+		},
+		"183": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.emitonly"
+		},
+		"184": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.emitonly"
+		},
+		"185": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "name"
+		},
+		"186": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "cb"
+		},
 		"187": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/EV.ts",
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
 			"qualifiedName": "args"
 		},
 		"188": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/SizeFlag.ts",
-			"qualifiedName": "SizeFlag"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.emit"
 		},
 		"189": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/SizeFlag.ts",
-			"qualifiedName": "SizeFlag.sizes"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV.emit"
 		},
 		"190": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/SizeFlag.ts",
-			"qualifiedName": "SizeFlag._init"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "name"
 		},
 		"191": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/SizeFlag.ts",
-			"qualifiedName": "SizeFlag.GetDisplayObjectSize"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "args"
 		},
 		"192": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/SizeFlag.ts",
-			"qualifiedName": "SizeFlag.GetDisplayObjectSize"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV._emit"
 		},
 		"193": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/SizeFlag.ts",
-			"qualifiedName": "target"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "EV._emit"
 		},
 		"194": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/SizeFlag.ts",
-			"qualifiedName": "SizeFlag.__constructor"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "options"
 		},
 		"195": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/SizeFlag.ts",
-			"qualifiedName": "SizeFlag"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "cb"
 		},
 		"196": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/SizeFlag.ts",
-			"qualifiedName": "SizeFlag.left"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "list"
 		},
 		"197": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/SizeFlag.ts",
-			"qualifiedName": "SizeFlag.up"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/EV.ts",
+			"qualifiedName": "args"
 		},
 		"198": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/SizeFlag.ts",
-			"qualifiedName": "SizeFlag.Update"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/SizeFlag.ts",
+			"qualifiedName": "SizeFlag"
 		},
 		"199": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/SizeFlag.ts",
-			"qualifiedName": "SizeFlag.Update"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/SizeFlag.ts",
+			"qualifiedName": "SizeFlag.sizes"
 		},
 		"200": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "PIXIfeatureComponent.container"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/SizeFlag.ts",
+			"qualifiedName": "SizeFlag._init"
 		},
 		"201": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._gameObject"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/SizeFlag.ts",
+			"qualifiedName": "SizeFlag.GetDisplayObjectSize"
 		},
 		"202": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._enable"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/SizeFlag.ts",
+			"qualifiedName": "SizeFlag.GetDisplayObjectSize"
 		},
 		"203": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._start"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/SizeFlag.ts",
+			"qualifiedName": "target"
 		},
 		"204": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._destroy"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/SizeFlag.ts",
+			"qualifiedName": "SizeFlag.__constructor"
 		},
 		"205": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._destroy"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/SizeFlag.ts",
+			"qualifiedName": "SizeFlag"
 		},
 		"206": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.enable"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/SizeFlag.ts",
+			"qualifiedName": "SizeFlag.left"
 		},
 		"207": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.enable"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/SizeFlag.ts",
+			"qualifiedName": "SizeFlag.up"
 		},
 		"208": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.enable"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/SizeFlag.ts",
+			"qualifiedName": "SizeFlag.Update"
 		},
 		"209": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "b"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/SizeFlag.ts",
+			"qualifiedName": "SizeFlag.Update"
 		},
 		"210": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.gameObject"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "PIXIfeatureComponent.container"
 		},
 		"211": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.gameObject"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._gameObject"
 		},
 		"212": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.gameObject"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._enable"
 		},
 		"213": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "g"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._start"
 		},
 		"214": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._GameObjectUpdate"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._destroy"
 		},
 		"215": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._GameObjectUpdate"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._destroy"
 		},
 		"216": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.Awake"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.enable"
 		},
 		"217": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.Awake"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.enable"
 		},
 		"218": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.Start"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.enable"
 		},
 		"219": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component.Start"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "b"
 		},
 		"220": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
-			"qualifiedName": "Component._Destroy"
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.gameObject"
 		},
 		"221": {
-			"packageName": "rmmz-game",
-			"packagePath": "js/GameObject/Component.ts",
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.gameObject"
+		},
+		"222": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.gameObject"
+		},
+		"223": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "g"
+		},
+		"224": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._GameObjectUpdate"
+		},
+		"225": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._GameObjectUpdate"
+		},
+		"226": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Awake"
+		},
+		"227": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Awake"
+		},
+		"228": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Start"
+		},
+		"229": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Start"
+		},
+		"230": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._Destroy"
+		},
+		"231": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._Destroy"
+		},
+		"232": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "PIXIfeatureComponent"
+		},
+		"233": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.__constructor"
+		},
+		"234": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "PIXIfeatureComponent"
+		},
+		"235": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "PIXIfeatureComponent.container"
+		},
+		"236": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._gameObject"
+		},
+		"237": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._enable"
+		},
+		"238": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._start"
+		},
+		"239": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._destroy"
+		},
+		"240": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._destroy"
+		},
+		"241": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.enable"
+		},
+		"242": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.enable"
+		},
+		"243": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.enable"
+		},
+		"244": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "b"
+		},
+		"245": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.gameObject"
+		},
+		"246": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.gameObject"
+		},
+		"247": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.gameObject"
+		},
+		"248": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "g"
+		},
+		"249": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._GameObjectUpdate"
+		},
+		"250": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._GameObjectUpdate"
+		},
+		"251": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Awake"
+		},
+		"252": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Awake"
+		},
+		"253": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Start"
+		},
+		"254": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Start"
+		},
+		"255": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Update"
+		},
+		"256": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component.Update"
+		},
+		"257": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
+			"qualifiedName": "Component._Destroy"
+		},
+		"258": {
+			"packageName": "<unknown>",
+			"packagePath": "H:/BY_SVN/☆工程文件/unity/JSgameHelper/assets/script/gameobject/Component.ts",
 			"qualifiedName": "Component._Destroy"
 		}
 	},

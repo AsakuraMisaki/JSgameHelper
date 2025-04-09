@@ -1,7 +1,8 @@
 import { GameObject } from "./GameObject";
 import { PIXI } from "./Types";
 
-export class Component{
+
+export abstract class Component{
   _gameObject:GameObject;
   _enable:Boolean = true;
   _start:Boolean = false;
