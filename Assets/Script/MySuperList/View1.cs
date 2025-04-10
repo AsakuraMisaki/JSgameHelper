@@ -19,6 +19,9 @@ namespace ScriptableList
 
         void OnEnable()
         {
+            var config = AssetDatabase.LoadAssetAtPath<ViewConfig>("Assets/viewConfig.asset");
+            ViewConfig.instance = config;
+            Debug.Log(config);
             RefreshGraphViews();
         }
 
