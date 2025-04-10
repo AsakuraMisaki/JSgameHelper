@@ -12,9 +12,9 @@ namespace ScriptableList
     {
         
         public enum Behvs { Assign, Operation, Delete, Call, Return }
-        public enum Type { Local, Global, QuickG, Number, String }
-        public enum QuickG { 变量, GetStateCount, GetPlayerSprite, GetPlayer, GetState, UseSkill, BreakSkill, CheckDie }
-
+        public enum Type { Local, Global, QuickG, Number, String, Boolean }
+        public enum QuickG { Variable, GetStateCount, GetPlayerSprite, GetPlayer, GetState, UseSkill, BreakSkill, CheckDie }
+        
         [Button]
         void Attacher()
         {
@@ -81,7 +81,7 @@ namespace ScriptableList
                         result += $"{op} Global.{right.fff}";
                     }
                 }
-                if(obj.beh == Behvs.Call){
+                else if(obj.beh == Behvs.Call){
                     var left = obj.callScope.theThis;
                     var right = obj.callScope.target;
                     if(left.type == Type.Local && left.target){
@@ -125,6 +125,9 @@ namespace ScriptableList
 
                 [ShowIf("type", Type.String)]
                 public string str;
+
+                [ShowIf("type", Type.Boolean)]
+                public bool state;
 
             }
 

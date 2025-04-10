@@ -1,3 +1,4 @@
+using ScriptableList;
 using Sirenix.OdinInspector;
 using System;
 using System.Collections;
@@ -14,6 +15,8 @@ namespace PIXIJS
     
     public class Manager : MonoBehaviour
     {
+        
+
         public class Echo : WebSocketBehavior
         {
             protected override void OnOpen()
@@ -42,6 +45,12 @@ namespace PIXIJS
         // public GameObject container;
         [ReadOnly]
         public bool running = false;
+
+        [Button]
+        private void _Config(ViewConfig viewConfig)
+        {
+            ViewConfig.instance = viewConfig;
+        }
 
         
         [ButtonGroup]
