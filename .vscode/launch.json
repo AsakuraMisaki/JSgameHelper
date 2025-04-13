@@ -14,7 +14,7 @@
              * Assuming locally installed
              */
             "runtimeExecutable": "tsx",
-            "cwd": "${workspaceFolder}/assets/script/gameobject/",
+            "cwd": "${workspaceFolder}/assets/script/pixijs/gameobject/",
             /*
              * Open terminal when debugging starts (Optional)
              * Useful to see console.logs
