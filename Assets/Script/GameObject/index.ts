@@ -1,7 +1,7 @@
 import { Component, PIXIfeatureComponent } from "./Component";
 import { EV } from "./EV";
-import * as Layout from "./Layout";
+import * as Layouts from "./Layout";
 import { SizeFlag } from "./SizeFlag";
 
 
-export { Layout, Component, EV, SizeFlag, PIXIfeatureComponent }
+export { Layouts, Component, EV, SizeFlag, PIXIfeatureComponent }

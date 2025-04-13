@@ -20,7 +20,7 @@ export class B implements A{
 
 /** @public */
 export class Vec2{
-   _x: number = 0;
+  _x: number = 0;
   _y: number = 0;
   constructor(x=0, y=0){
     this._x = x;

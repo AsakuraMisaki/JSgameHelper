@@ -31,6 +31,7 @@ class typeProperty{
     target: number | { packageName: string }
     name: string
   }
+  children?: Array<typespace|typeProperty>
   defaultValue: string
 }
 class typespace{
@@ -41,15 +42,17 @@ class typespace{
   children: Array<typespace|typeProperty>
   implementedTypes?: [{ target:number }]
   extendedTypes?: [{ target:number }]
+  parent: number
   static kindNamespace:number = 4
   static kindModule:number = 1
   static kindClass:number = 128
+  static kindInterface:number = 256
   static kindEnum:number = 8
   static kindMember:number = 1024
   static kindEnumItem:number = 16
   
   static kindProperty = [this.kindMember, this.kindEnumItem];
-  static kindSpace = [this.kindNamespace, this.kindClass, this.kindEnum, this.kindModule];
+  static kindSpace = [this.kindNamespace, this.kindClass, this.kindEnum, this.kindModule, this.kindInterface];
   static kindCS = {
     "boolean": "bool",
     "number": "float",
@@ -82,26 +85,109 @@ class MakeCS{
   _checkIsComponent(parent:typespace, child:typespace){
     return parent.name == "Component" && parent.flags.isAbstract && (child.extendedTypes && child.extendedTypes[0]);
   }
-  exec(){
-    this.save(this.typespace);
-    this._exec(this.typespace);
-    console.log(this.kindCaches);
-    this.makeFile();
-  }
-  save(obj:typespace){
-    if(obj.kind == typespace.kindNamespace || obj.kind == typespace.kindModule){
-      obj.children.forEach((c)=>{
-        this.save(c as typespace);
+  exec(namespace="PIXIJS_Component"){
+    this.typespace.name = namespace;
+    let cache:Map<number, [typespace, string]> = new Map();
+    this.save(this.typespace, cache);
+    let root = cache.get(0);
+    if(root){
+      let file = root[1].replace(/\/\/\$(\d+)\$\/\//g, (m):string=>{
+        const id = Number(/\/\$(\d+)\$\//i.exec(m)[1]);
+        const obj = cache.get(id);
+        let parent = this.getTargetCacheRelativeName(obj[0], obj[0].name, cache);
+        // if(parent)
+        return parent;
       })
+      console.log(file);
+      fs.writeFileSync("./ttt.cs", file, {encoding:"utf-8"});
     }
-    else if(obj.kind == typespace.kindClass){
-      let ex = obj.extendedTypes ? obj.extendedTypes[0].target : obj.implementedTypes ? obj.implementedTypes[0].target : -1;
-      this.kindCaches.set(obj.id, [`${typespace.kindClass}`, obj.name, new Set(), ex, obj]);
+    
+    // this._exec(this.typespace);
+    // console.log(this.kindCaches);
+    // this.makeFile();
+    // console.log(cache);
+  }
+  getTargetCacheRelativeName(obj:typespace, result:string, cache:Map<number, [typespace, string]>):string{
+    if(obj.parent > 0){
+      result = `${this.getTargetCacheRelativeName(cache.get(obj.parent)[0], result, cache)}` + "." + result; 
+      return result;
     }
-    else if(obj.kind == typespace.kindEnum){
-      let ex = obj.extendedTypes ? obj.extendedTypes[0].target : obj.implementedTypes ? obj.implementedTypes[0].target : -1;
-      this.kindCaches.set(obj.id, [`${typespace.kindEnum}`, obj.name, new Set(), ex, obj]);
+    // if(!obj) return "";
+    // if(obj.parent == 0 || !obj.parent) return "";
+    // else if(obj.parent){
+    //   result += `${this.getTargetCacheRelativeName(cache.get(obj.parent)[0], result, cache)}`; 
+    //   return result;
+    // }
+    return obj.name;
+  }
+  getHeritedObject(types:Array<any>|null):number{
+    if(!types) return -1;
+    if(!types.length) return -1;
+    return types[0].target as number;
+  }
+  getPropObject(info:any):number|string{
+    if(info.target && info.target > 0) return info.target;
+    if(info.name) return typespace.kindCS[info.name.toLowerCase()];
+  }
+  save(obj:typespace|typeProperty, cache:Map<number, [typespace, string]> = new Map(), parent:typespace = {} as typespace){
+    let result = "";
+    if(obj.kind == typespace.kindMember && 
+    (obj.flags.isPublic || (parent && parent.flags.isPublic)) 
+    && !obj.flags.isInherited && !obj.flags.isProtected){
+      obj = obj as typeProperty;
+      let prop = this.getPropObject(obj.type);
+      obj = obj as typeProperty;
+      if(typeof(prop) == "string"){
+        return `public ${prop} ${obj.name} = ${typespace.kindCS[obj.defaultValue] || obj.defaultValue};\n`;
+      }
+      else if(typeof(prop) == "number"){
+        return `public //$${prop}$// ${obj.name};\n`;
+      }
+      return "";
     }
+    else if(obj.kind == typespace.kindEnumItem){
+      return `${obj.name},`;
+    }
+    else{
+      obj = obj as typespace;
+      if(typespace.kindSpace.indexOf(obj.kind) < 0) return "";
+      if(parent){
+        obj.parent = parent.id;
+      }
+      let content = "", header = "";
+      if(obj.kind == typespace.kindInterface){
+        let implementedTypes = this.getHeritedObject(obj.implementedTypes);
+        let target = implementedTypes < 0 ? "" : ` : //$${implementedTypes}$//`;
+        header = `public interface ${obj.name}${target}`;
+      }
+      else if(obj.kind == typespace.kindClass){
+        let extendedTypes = this.getHeritedObject(obj.extendedTypes || obj.implementedTypes);
+        let target = extendedTypes < 0 ? "" : ` : //$${extendedTypes}$//`;
+        header = `[Serializable]\npublic class ${obj.name}${target}`;
+      }
+      else if(obj.kind == typespace.kindEnum){
+        header = `[Serializable]\npublic enum ${obj.name}`;
+      }
+      else if(obj.kind == typespace.kindNamespace){
+        header = `namespace ${obj.name}`;
+      }
+      else if(obj.kind == typespace.kindModule){
+        header = `namespace ${obj.name}`;
+      }
+      if(obj.children){
+        obj.children.forEach((_)=>{
+          let r = this.save(_, cache, obj as typespace);
+          content += r;
+        })
+      }
+      if(header){
+        result = `${header}\n{\n${content}\n}\n`;
+      }
+      cache.set(obj.id, [obj, result]);
+      
+      return result;
+    }
+    
   }
   makeDefaultValue(theClass, target){
     if(theClass){
@@ -178,7 +264,9 @@ class MakeCS{
   }
 }
 function test(){
-  let content:string = fs.readFileSync("./output.json", { encoding:"utf-8" });
+  let path = `${process.cwd()}/output.json`;
+  console.log(path);
+  let content:string = fs.readFileSync(path, { encoding:"utf-8" });
   let obj:typespace = JSON.parse(content);
   let a = new MakeCS(obj);
   a.exec();

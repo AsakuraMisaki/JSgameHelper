@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine.UIElements;
 using UnityEditor;
-namespace ScriptableList
+namespace ScriptableList 
 {
+    
     public class MyNode: Node
     {
         public Node top;
