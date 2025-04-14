@@ -34,7 +34,7 @@ export class GameObject{
     a.gameObject = this;
     return a;
   }
-  GetComponent<C extends Component>(T:Function):null|C{
+  GetComponent<C extends Component, A extends PIXI.Container>(T:Function):null|C|A{
     const set = this.components.get(T);
     if(!set) return null;
     let targets = Array.from(set);

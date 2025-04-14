@@ -1,5 +1,7 @@
 import { GameObject } from "./GameObject";
-import { PIXI } from "./Types";
+import { Model } from "./Model";
+import { Resource } from "./Resource";
+import { Bitmap, PIXI } from "./Types";
 
 
 export abstract class Component{
@@ -38,6 +40,7 @@ export abstract class Component{
   Update(){ };
   _Destroy(){ };
 }
-export class PIXIfeatureComponent extends Component{
-  container: PIXI.Container;
-}
+
+
+
+

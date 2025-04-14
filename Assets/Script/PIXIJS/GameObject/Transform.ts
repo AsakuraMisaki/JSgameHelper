@@ -1,12 +1,10 @@
-import { PIXIfeatureComponent } from "./Component";
+
+import { Container } from "./Container";
 import { Layout } from "./Layout";
 import { Model } from "./Model";
 
-export class Transform extends PIXIfeatureComponent{
+export class Transform extends Container{
   localID:number = 0;
-  constructor() {
-    super();
-  }
   width():number{
     return this.container.width;
   }

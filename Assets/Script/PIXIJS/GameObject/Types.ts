@@ -62,6 +62,7 @@ export namespace PIXI{
     gameObject: GameObject | null
     transform: Transform
     hitArea: Rectangle
+    remove:()=>any
     get mask(){
       return this._mask;
     }
@@ -88,6 +89,7 @@ export namespace PIXI{
     containsPoint: (p:Point)=>Boolean
     beginFill: (value:any)=>any
     drawRoundedRect: (...values:any[])=>any
+    drawCircle: (...values:any[])=>any
     clear: (...values:any[])=>any
   }
   export class Text extends Container{

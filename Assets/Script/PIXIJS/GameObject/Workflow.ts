@@ -1,6 +1,7 @@
 // @ts-ignore
 const fs = require("fs");
 
+
 class Workflow {
   ws: WebSocket;
   constructor(path: string) {
@@ -21,11 +22,27 @@ class typeFlags {
   isInherited?: boolean
   isProtected?: boolean
 }
+class BlockTags{
+  tag: string
+  content: [{
+    kind: string
+    text?: string
+  }]
+}
+class BlockTagsExtend{
+  unity: string = ""
+  isColor: boolean = false
+  dropdown: string = ""
+}
 class typeProperty {
   id: number
   kind: number
   name: string
   flags: typeFlags
+  comment?:{
+    temp: number,
+    blockTags?: Array<BlockTags> 
+  }
   type: {
     type: string
     target: number | { packageName: string }
@@ -39,10 +56,16 @@ class typespace {
   kind: number
   name: string
   flags: typeFlags
+  comment?:{
+    temp: number,
+    blockTags?: Array<BlockTags> 
+  }
+  
   children: Array<typespace | typeProperty>
   implementedTypes?: [{ target: number }]
   extendedTypes?: [{ target: number }]
   parent: number
+  
   static kindNamespace: number = 4
   static kindModule: number = 1
   static kindClass: number = 128
@@ -65,6 +88,7 @@ class typespace {
   }
 }
 class MakeCS {
+  temp:number = 1;
   typespace: typespace = null;
   kindCaches: Map<number, [string, string, Set<string>, number, typespace]> = new Map();
   // kindCachesForCheck:Map<number, typespace> = new Map();
@@ -123,6 +147,7 @@ class MakeCS {
         let result = [
           "using System;",
           "using UnityEngine;",
+          "using System.Collections.Generic;",
           Sirenix ? "using Sirenix.OdinInspector;" : "",
           `namespace ${namespace}\n{\n${file}\n}\n`
         ]
@@ -168,13 +193,29 @@ class MakeCS {
       obj = obj as typeProperty;
       let prop = this.getPropObject(obj.type);
       obj = obj as typeProperty;
-      if (typeof (prop) == "string") {
-        return `public ${prop} ${obj.name} = ${typespace.kindCS[obj.defaultValue] || obj.defaultValue};\n`;
+      let exInfo = this.processBlockTags(obj);
+      let rr = "";
+      if(exInfo.isColor){
+        rr = `public Color ${obj.name};\n`;
+      }
+      else if (typeof (prop) == "string") {
+        let dv = `${typespace.kindCS[obj.defaultValue] || obj.defaultValue || ""}`;
+        if(dv) dv = " = " + dv; 
+        if(prop == "float" && dv){
+          dv += "f";
+        }
+        rr = `public ${prop} ${obj.name}${dv};\n`;
       }
       else if (typeof (prop) == "number") {
-        return `//&${prop}&// ${obj.name};\n`;
+        rr = `//&${prop}&// ${obj.name};\n`;
       }
-      return "";
+      if (exInfo.dropdown.length) {
+        rr = `${exInfo.dropdown}\n${rr}`;
+      }
+      if (exInfo.unity.length) {
+        rr = `${exInfo.unity}\n${rr}`;
+      }
+      return rr;
     }
     else if (obj.kind == typespace.kindEnumItem) {
       return `${obj.name},`;
@@ -228,6 +269,35 @@ class MakeCS {
 
     }
   }
+  processBlockTags(obj: typespace|typeProperty):BlockTagsExtend{
+    let info = new BlockTagsExtend();
+    if(!obj.comment) return info;
+    if(!obj.comment.blockTags) return info;
+    obj.comment.temp = obj.comment.temp || 1;
+    obj.comment.blockTags.forEach((t)=>{
+      if(/^\@unity/i.test(t.tag)){
+        info.unity = `${t.content[0].text}`;
+      }
+      else if(/^\@dropdown/i.test(t.tag)){
+        let options = t.content[0].text.split(/\s+/g);
+        let values_ = `values_${this.temp++}`;
+        // if(!isNaN(Number(options[0]))){
+        //   info.dropdown = `private List<float> ${values_} = {${options.join(",")}}`
+        // }
+        // else 
+        if(options[0]){
+          let ops = options.map((s)=>`"${s}"`);
+          info.dropdown = `private List<string> ${values_} = new List<string>(){${ops.join(",")}};`
+        }
+        info.dropdown += `\n[ValueDropdown("${values_}")]`;
+      }
+      else if(/^\@color/i.test(t.tag)){
+        info.isColor = true;
+      }
+    })
+    return info;
+  }
+  
   _exec(obj: typespace, set = new Set(), flags: { isPublic?: boolean } = {}) {
     obj.children.forEach((target) => {
       if (typespace.kindProperty.indexOf(target.kind) >= 0) {
@@ -297,8 +367,10 @@ class MakeCS {
     fs.writeFileSync(path, all, { encoding: "utf-8" });
   }
 }
+
 function test() {
-  let path = `${process.cwd()}/output.json`;
+  
+  let path = `./output.json`;
   console.log(path);
   let content: string = fs.readFileSync(path, { encoding: "utf-8" });
   let obj: typespace = JSON.parse(content);

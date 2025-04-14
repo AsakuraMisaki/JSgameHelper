@@ -1,8 +1,10 @@
-import { Component, PIXIfeatureComponent } from "./Component";
-import { EV } from "./EV";
-import * as Layouts from "./Layout";
-import { SizeFlag } from "./SizeFlag";
+import { Component } from "./Component";
+import { Container } from "./Container";
+import { Graphics, GraphicsType } from "./Graphics";
+import { Resource } from "./Resource";
+import { Sprite } from "./Sprite";
+import { Text, TextStyle } from "./Text";
 
-
-
-export { Layouts, Component, EV, SizeFlag, PIXIfeatureComponent }
+export {
+  Resource, Component, Container, Sprite, Graphics, GraphicsType, Text, TextStyle
+}

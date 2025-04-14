@@ -1,4 +1,5 @@
-import { PIXIfeatureComponent } from "./Component";
+
+import { Container } from "./Container";
 import { EV } from "./EV";
 import { Model } from "./Model";
 import { SizeFlag } from "./SizeFlag";
@@ -21,20 +22,20 @@ export class Vec2{
 
 export enum dirs { Horizontal, Vertical }
 
-export class Layout extends PIXIfeatureComponent {
+export class Layout extends Container {
   
   static maskArea:PIXI.Container;
   static _init = false;
   ev = new EV();
-  /** @public */ _dir = dirs.Vertical;
-  /** @public */ _needLayout = false;
-  /** @public */ maxCols = Infinity;
-  /** @public */ margin = new Vec2();
+  public _dir = dirs.Vertical;
+  public _needLayout = false;
+  public maxCols = Infinity;
+  public margin = new Vec2();
+  public ttt:SizeFlag;
   _padding = new Vec2(5, 5);
   _size = new Vec2(Infinity, Infinity);
   round = 0;
   mask:PIXI.Graphics;
-  /** @public */ ttt:SizeFlag
   get size(){
     return this._size;
   }

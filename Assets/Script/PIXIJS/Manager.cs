@@ -43,8 +43,11 @@ namespace PIXIJS
         [TitleGroup("FakeSync", "伪同步相关")]
         // public Image screenShot;
         // public GameObject container;
+        
         [ReadOnly]
         public bool running = false;
+
+        
 
         [Button]
         private void _Config(ViewConfig viewConfig)

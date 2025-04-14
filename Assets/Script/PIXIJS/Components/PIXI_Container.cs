@@ -1,10 +1,11 @@
 using System;
 using UnityEngine;
+using System.Collections.Generic;
 using Sirenix.OdinInspector;
 namespace PIXIJS_Component
 {
 [Serializable]
-public class EV
+public class Container : Component
 {
 
 }

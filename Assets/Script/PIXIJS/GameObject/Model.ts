@@ -26,7 +26,7 @@ export class Model extends EV{
   static ticker(){
     return Graphics.app.ticker;
   }
-  static async safeload(path){
+  static async safeload(path):Promise<{bitmap?:Bitmap, tex:PIXI.Texture, base:PIXI.BaseTexture}>{
     const p = new Promise((resolve, reject)=>{
       // base64
       if (/^data:/i.test(path)) {
@@ -44,11 +44,11 @@ export class Model extends EV{
         bitmap.addLoadListener(() => {
           const base = bitmap._baseTexture;
           let tex = new PIXI.Texture(base);
-          resolve({ tex, base });
+          resolve({ bitmap, tex, base });
         })
       }
     })
-    return p;
+    return p as Promise<{bitmap:Bitmap, tex:PIXI.Texture, base:PIXI.BaseTexture}>;
   } 
   static loader(path:string):Bitmap{
     return ImageManager.loadBitmapFromUrl.bind(ImageManager)(path);
